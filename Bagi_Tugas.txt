@@ -1,0 +1,17 @@
+Mentoring:
+> Fokus ke solusi 2 & 3 dulu. Tech stacknya HTML CSS JS PHP
+> Utilize GitHub
+> Pake POS Open Source aja, tulis referensi, Chromis
+
+Tugas umum:
+> Belajar github sampe katam
+> Html, css, js
+> PHP
+> Extra: MySQL
+
+Tugas:
+> Jovan: Buat tampilan kassa jadi interaktif
+> Cara mengkoneksikan ketiga media
+> Front end: Anna, Ian, Hasna, Sulis, Holly, Yan, Ikhsan
+> Back end: Naufal, Ernest, Daffa, Ihza, Brandon, Rizkin, Cisco
+> Full stack: Ananda, Jovan (memantau)
