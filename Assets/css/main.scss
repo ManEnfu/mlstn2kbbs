@@ -1,0 +1,21 @@
+.card-container{
+    min-height:2em;
+
+    .card-menu{
+        height: 120px;
+        width: 23%;
+        margin: 1%;
+        background-color: gray;
+
+        .card-menu-image{
+            min-height: 70%;
+            width:100%;
+            background-color: coral;
+        }
+
+        p{
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}

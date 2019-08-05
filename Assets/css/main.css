@@ -1,0 +1,22 @@
+.card-container {
+  min-height: 2em;
+}
+
+.card-container .card-menu {
+  height: 120px;
+  width: 23%;
+  margin: 1%;
+  background-color: gray;
+}
+
+.card-container .card-menu .card-menu-image {
+  min-height: 70%;
+  width: 100%;
+  background-color: coral;
+}
+
+.card-container .card-menu p {
+  font-size: 12px;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
