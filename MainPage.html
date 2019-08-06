@@ -13,8 +13,20 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/d31c89c165.js"></script>
-
     <link rel="stylesheet" href="Assets/css/main.css">
+    <style>
+    .sidenavigator {
+    height: 100%;
+    width: 90px;
+    position: fixed;
+    margin-top: 0;
+    left: 0;
+    background-color: #ffe942;
+    padding: 20px;
+    }
+    </style>
+
+
 </head>
 <body  style="background-color: #EDEDED; margin:0%">
 
@@ -34,31 +46,30 @@
     </div>
 </nav>
 
+<!-- ### SIDENAVBAR ### -->
+<div class="sidenavigator">
+	
+</div>
+
+
 <!-- ### CONTENT ### -->
-<div class="container" style="background-color:#EDEDED; max-width:100%">
+<div class="container" style="background-color:#EDEDED; margin-left: 90px; max-width: 100%;">
     <div class="row" style="background-color: #EDEDED">
-        <div class="col-5" style="background-color: #FFFFFF; margin: 1rem; padding:0.3rem">
-                <div class=" card-container">
-                    <div class="card-menu">
-                        <div class='card-menu-image'></div>
-                        <p>Card Description</p>
-                    </div>
-                </div>
-                <div class=" card-container">
-                    <div class="card-menu">
-                        <div class='card-menu-image'></div>
-                        <p>Card Description</p>
-                    </div>
-                </div>
-                <div class=" card-container">
-                    <div class="card-menu">
-                        <div class='card-menu-image'></div>
-                        <p>Card Description</p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-5" style="background-color: #FFFFFF; margin: 1rem; padding:1rem">
+			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin: 0 15px 0 25px; width: 150px;">ALA CARTE</button>
+			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin-right: 15px; width: 150px;">COMBO</button>
+			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; width: 150px;">SNACK</button>
+			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0 110px; width: 150px;">DRINKS</button>
+			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin-top: 10px; width: 150px;">DESSERT</button>
+        
+        
         </div>
-        <div class="col-2" style="background-color: #FFFFFF; margin: 1rem; padding:1rem"></div>
+        <div class="col-2" style="background-color: #FFFFFF; margin: 1rem; padding:1rem"><b>VARIAN</b>
+			<button type="button" class="btn btn-success" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0 25px; width: 150px;">BIG</button>
+			<button type="button" class="btn btn-success" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0 25px; width: 150px;">SMALL</button>
+        
+        </div>
+        
         <div class="col-4" style="background-color: #FFFFFF; margin: 1rem; padding:1rem"></div>
         
     </div>
