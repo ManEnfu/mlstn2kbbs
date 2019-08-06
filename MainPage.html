@@ -24,6 +24,22 @@
     background-color: #ffe942;
     padding: 20px;
     }
+    
+    .content {
+		background: rgb(0, 0, 0); /* Fallback color */
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 100px;
+		height: 30px;
+		font size: 12px;
+		text-align: center;
+}
+
+.content:hover {
+	opacity : 0.8;
+	cursor : pointer;
+}
+
     </style>
 
 
@@ -60,18 +76,41 @@
 			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin-right: 15px; width: 150px;">COMBO</button>
 			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; width: 150px;">SNACK</button>
 			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0 110px; width: 150px;">DRINKS</button>
-			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin-top: 10px; width: 150px;">DESSERT</button>
+			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin-top: 10px; width: 150px; margin-right: 50px;">DESSERT</button>
         
-        
+			<img src="Assets/kabobs.png" style="width:100px; margin-top:40px; cursor: pointer; height: 80px;"></a>
+			<div class="content">
+				<p>nama menu</p>
+			</div>
+			
+			<img src="Assets/kabobs.png" style="width:100px; cursor: pointer; height: 80px;"></a>
+			<div class="content">
+				<p>nama menu</p>
+			</div>
+			
+			<img src="Assets/kabobs.png" style="width:100px; margin-top:40px; cursor: pointer; height: 80px;"></a>
+			<div class="content">
+				<p>nama menu</p>
+			</div>
+			
         </div>
-        <div class="col-2" style="background-color: #FFFFFF; margin: 1rem; padding:1rem"><b>VARIAN</b>
+        <div class="col-2" style="background-color: #FFFFFF; margin: 1rem; padding:1rem;"><b>VARIAN</b>
 			<button type="button" class="btn btn-success" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0 25px; width: 150px;">BIG</button>
-			<button type="button" class="btn btn-success" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0 25px; width: 150px;">SMALL</button>
+			<button type="button" class="btn btn-success" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 40px 25px; width: 150px;">SMALL</button>       
+                
+        <b>TOPPING</b>
+        <button type="button" class="btn btn-warning" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 40px 25px; width: 150px;">PILIH</button>
         
+        <b>KEPEDASAN</b>
+        <button type="button" class="btn btn-danger" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0px 8px; width: 180px;">Not Spicy</button>
+        <button type="button" class="btn btn-danger" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0px 8px; width: 180px;">Medium Spicy</button>
+        <button type="button" class="btn btn-danger" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0px 8px; width: 180px;">Spicy</button>
         </div>
-        
-        <div class="col-4" style="background-color: #FFFFFF; margin: 1rem; padding:1rem"></div>
-        
+               
+        <div class="col-4" style="background-color: #FFFFFF; margin: 1rem; padding:1rem">
+        <button type="button" class="btn btn-success" style= "padding: 5px; margin: 10px 15px 40px 10px; width: 50px">+</button> 
+        <b style="margin-left: 75px; font size: 18px;">ORDER</b>
+        <button type="button" class="btn btn-danger" style= "padding: 5px; margin: 10px 15px 40px 90px; width: 50px">-</button> 
     </div>
 </div>    
     
