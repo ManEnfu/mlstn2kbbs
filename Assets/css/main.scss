@@ -1,21 +1,19 @@
-.card-container{
-    min-height:2em;
+.kolom {
+  float: left;
+  width: 23.3%;
+  margin: 0.25rem;
+  background-color: grey;
+}
 
-    .card-menu{
-        height: 120px;
-        width: 23%;
-        margin: 1%;
-        background-color: gray;
+p{
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
 
-        .card-menu-image{
-            min-height: 70%;
-            width:100%;
-            background-color: coral;
-        }
-
-        p{
-            font-size: 12px;
-            text-align: center;
-        }
-    }
+/* Clearfix (clear floats) */
+.baris::after {
+  content: "";
+  clear: both;
+  display: table;
 }
