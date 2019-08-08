@@ -1,12 +1,12 @@
 <?php
 	session_start();
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		if (isset($_POST["login_username"]) and isset($_POST["login_password"])) {
-			if ($_POST["login_username"] == "user" and $_POST["login_password"] == "password") {
-				$_SESSION["user"] = $_POST["login_username"];
-				header("Location: /index.php");
+		if (isset($_POST["idkasir"]) and isset($_POST["psw"])) {
+			if ($_POST["idkasir"] == "user" and $_POST["psw"] == "password") {
+				$_SESSION["loggedid"] = $_POST["idkasir"];
+				header("Location: ../index.php");
 			} else {
-				header("Location: /login");
+				header("Location: index.php");
 			}
 		} 
 	}
