@@ -22,6 +22,15 @@ secara back end
                 data menu yang masih dibuat : Kebab Daging, Kebab Black Pepper
         - pelanggan : nama (bersifat dummy) ada 4
         - pesanan   : berisi id pelanggan dan id menu yang dipilih.
+- connect mysql : db_connect.php
+    -   server : localhost
+    -   username    : root
+    -   password    :
+    -   database    : kabobs
+
 - login.php
     - sudah bisa validasi melalui mysql
+
+- MainPage.php
+    - 
     
