@@ -18,6 +18,15 @@
   }
 }
 
+
+.h6{
+  font-weight:bold;
+}
+.header-kasir{
+  text-align: center;
+  width:6.25em;
+}
+
 .card-container {
   max-width: 120px;
   min-height: 120px;
@@ -107,6 +116,22 @@
   width: 180px;
 }
 
+.btn-order {
+  min-width:2em;
+  min-height:2em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.btn-kasir {
+  padding:0.5em 1em;
+  margin: 0 0.5em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
 .btn-nav {
   padding: 0.5em;
   margin: 0.5em;
@@ -180,4 +205,14 @@
       font-size: 12px;
     }
   }
+}
+
+.my-scrollbar{
+  position: relative;
+  height: 10em;
+  overflow: auto
+}
+
+.table-wrapper-scroll-y {
+  display: block;
 }

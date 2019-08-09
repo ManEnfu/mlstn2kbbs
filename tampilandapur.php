@@ -1,7 +1,7 @@
 <?php 
   require "functions.php";
-
-  $orders = query("SELECT * FROM orders");
+  require "db_connect.php"
+  $orders = query($connection, "SELECT * FROM pesanan");
  ?>
 
 <!DOCTYPE html>
@@ -37,8 +37,8 @@
           echo "white";
       } ?>" onclick="ActiveXObject">
         <td class="text-center"><?=$order["id"] ?></td>
-        <td class="text-center"><?=$order["nama_pemesan"] ?></td>
-        <td class="text-left"><?=$order["pesanan"] ?></td>
+        <td class="text-center"><?=$order["NAMApelanggan"] ?></td>
+        <td class="text-left"><?=$order["IDMenu"] ?></td>
       </tr>
 
      

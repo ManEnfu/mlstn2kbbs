@@ -1,7 +1,6 @@
 <?php 
   require "functions.php";
-
-  $orders = query("SELECT * FROM orders");
+  $orders = query("SELECT * FROM pesanan");
  ?>
 
 <!DOCTYPE html>
@@ -30,14 +29,14 @@
     <tbody class="text-center" bgcolor="white">
 
 <?php $i = 1;
-      foreach($orders as $order) : ?>
+      foreach($orders as $order) :  ?>
       <tr class="clickable-row" style="height: 50px; " bgcolor="<?php if ($order["status"] == "Siap") {
         echo "#ffefb3";
         } else {
           echo "#ffa552";
       } ?>" onclick="ActiveXObject">
         <td class="text-center"><?=$order["id"] ?></td>
-        <td class="text-center"><?=$order["nama_pemesan"] ?></td>
+        <td class="text-center"><?=$order["NAMApelanggan"] ?></td>
         <td class="text-left"><?=$order["status"] ?></td>
       </tr>
 
