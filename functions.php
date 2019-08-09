@@ -1,5 +1,5 @@
 <?php 
-	$link = mysqli_connect("localhost", "root", "", "milestone");
+	$link = mysqli_connect("localhost", "root", "", "kabobs");
 
 	function query($query) {
 		global $link;
