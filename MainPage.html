@@ -14,7 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/d31c89c165.js"></script>
     <link rel="stylesheet" href="Assets/css/main.css">
-    <script src="Assets/js/order.js"></script>
+    <script src="javascript/order.js"></script>
     <style>
         #tbl1 {}
         table {}
@@ -61,7 +61,7 @@
                     <div class="col-lg-12 d-flex flex-wrap justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte" onclick="menu(this.innerHTML)">PLACEHOLDER</div>
+                            <div class="card-alacarte" onclick="setMenu(this.innerHTML)">KEBAB</div>
                         </div>
                     </div>
                 </div>
@@ -70,35 +70,35 @@
                     <div class="col-lg-12 d-flex flex-wrap justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-combo">COMBO CLASSIC</div>
+                            <div class="card-combo" onclick="setMenu(this.innerHTML)">COMBO CLASSIC</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-combo">COMBO FULLBEEF</div>
+                            <div class="card-combo" onclick="setMenu(this.innerHTML)">COMBO FULLBEEF</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-combo">COMBO VEGETABLE</div>
+                            <div class="card-combo" onclick="setMenu(this.innerHTML)">COMBO VEGETABLE</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-combo">COMBO SMOKE BEEF</div>
+                            <div class="card-combo" onclick="setMenu(this.innerHTML)">COMBO SMOKE BEEF</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-combo">COMBO BARBEQUE</div>
+                            <div class="card-combo" onclick="setMenu(this.innerHTML)">COMBO BARBEQUE</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-combo">COMBO BLACKPEPPER</div>
+                            <div class="card-combo" onclick="setMenu(this.innerHTML)">COMBO BLACKPEPPER</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-combo">COMBO CHEESE</div>
+                            <div class="card-combo" onclick="setMenu(this.innerHTML)">COMBO CHEESE</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-combo">COMBO SUPREME</div>
+                            <div class="card-combo" onclick="setMenu(this.innerHTML)">COMBO SUPREME</div>
                         </div>
                     </div>
                 </div>
@@ -107,31 +107,31 @@
                     <div class="col-lg-12 d-flex flex-wrap justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">CIRENG</div>
+                            <div class="card-snack" onclick="setMenu(this.innerHTML)">CIRENG</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">TELOR GULUNG</div>
+                            <div class="card-snack" onclick="setMenu(this.innerHTML)">TELOR GULUNG</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">MUSHROOM</div>
+                            <div class="card-snack" onclick="setMenu(this.innerHTML)">MUSHROOM</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">INDOMIE</div>
+                            <div class="card-snack" onclick="setMenu(this.innerHTML)">INDOMIE</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">GRILLED ONION</div>
+                            <div class="card-snack" onclick="setMenu(this.innerHTML)">GRILLED ONION</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">BACON</div>
+                            <div class="card-snack" onclick="setMenu(this.innerHTML)">BACON</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">PANCAKE</div>
+                            <div class="card-snack" onclick="setMenu(this.innerHTML)">PANCAKE</div>
                         </div>
                     </div>
                 </div>
@@ -207,25 +207,25 @@
             <!-- $$$ VARIAN, TOPPING, KEPEDASAN $$$ -->
             <div class="border5">
                 <b>VARIAN</b>
-                    <button type="button" class="btn btn-var">BIG</button>
-                    <button type="button" class="btn btn-var">SMALL</button>       
+                    <button type="button" class="btn btn-var" onclick="setVariant(this.innerHTML);">BIG</button>
+                    <button type="button" class="btn btn-var" onclick="setVariant(this.innerHTML);">SMALL</button>       
                     <hr/>
                 <b>SAUCE</b>
-                    <button type="button" class="btn btn-topping">BBQ</button>
-                    <button type="button" class="btn btn-topping">CHEESE</button>
-                    <button type="button" class="btn btn-topping">BLACKPEPPER</button>
+                    <button type="button" class="btn btn-topping" onclick="setTopping(this.innerHTML);">BBQ</button>
+                    <button type="button" class="btn btn-topping" onclick="setTopping(this.innerHTML);">CHEESE</button>
+                    <button type="button" class="btn btn-topping" onclick="setTopping(this.innerHTML);">BLACKPEPPER</button>
                 <hr/>
                 <b>KEPEDASAN</b>  
-                <button type="button" class="btn btn-pedas">NOT SPICY</button>
-                <button type="button" class="btn btn-pedas">MEDIUM SPICY</button>
-                <button type="button" class="btn btn-pedas">SPICY</button>
+                <button type="button" class="btn btn-pedas" onclick="setLevel(0);">NOT SPICY</button>
+                <button type="button" class="btn btn-pedas" onclick="setLevel(1);">MEDIUM SPICY</button>
+                <button type="button" class="btn btn-pedas" onclick="setLevel(2);">SPICY</button>
             </div>
         </div> 
         <div class="col-lg-5" style="background-color:#EDEDED; padding:0%">
                 <!-- $$$ ORDER $$$ -->
                 <div class="border5">
                     <div class="row d-flex justify-content-between" style="padding:0 1rem">
-                            <button type="button" class="btn btn-order btn-success">+</button>
+                            <button type="button" class="btn btn-order btn-success" onclick="addMenu();createMenuItem();">+</button>
                             <b class="align-middle" style="font-size: 20px">ORDER</b>
                             <button type="button" class="btn btn-order btn-danger">-</button>
                     </div>
@@ -236,131 +236,13 @@
                                 <tr>
                                     <th class="header-kasir" style="width: 50px"><h6>ID</h6></th>
                                     <th class="header-kasir" style="width: 300px"><h6>Menu</h6></th>
-                                    <th class="header-kasir"><h6">Harga</h6></th>
-                                    <th class="header-kasir"><h6">Jumlah</h6></th>
+                                    <th class="header-kasir"><h6">Variant</h6></th>
+                                    <th class="header-kasir"><h6">Level</h6></th>
                                     <th class="header-kasir"><h6">Total</h6></th>
                                 </tr>
                             </thead>
-                            <tbody id="tbod">
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>
-                                <tr style="height: 20px">
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                    <td>alt</td>
-                                </tr>                           
+                            <tbody id="menu-list">
+
                             </tbody>
                         </table>
                     </div>
