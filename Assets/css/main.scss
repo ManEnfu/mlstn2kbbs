@@ -207,12 +207,10 @@
   }
 }
 
-.my-scrollbar{
-  position: relative;
-  height: 10em;
-  overflow: auto
-}
-
-.table-wrapper-scroll-y {
-  display: block;
+.btn-dapur{
+  padding: 2em 4em
+  min-width: 40px
+  min-height: 20px
+  font-weight: bold
+  font-size: 20px
 }
