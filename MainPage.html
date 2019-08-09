@@ -15,11 +15,6 @@
     <script src="https://kit.fontawesome.com/d31c89c165.js"></script>
     <link rel="stylesheet" href="Assets/css/main.css">
     <script src="Assets/js/dropdown.js"></script>
-    <style>
-        #tbl1 {}
-        table {}
-        tr {height: 20px}
-    </style>
 
 </head>
 <body style="background-color: #EDEDED">
@@ -59,37 +54,9 @@
 
                 <div id="ala carte" class="tabcontent">
                     <div class="col-lg-12 d-flex flex-wrap justify-content-around">
-                        <div class="card-container" onclick="neworder(1, 'CLASSIC KEBAB', 15000, 1)">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">CLASSIC KEBAB</div>
-                        </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">FULLBEEF KEBAB</div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">VEGETABLE KEBAB</div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">SMOKE BEEF KEBAB</div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">BARBEQUE KEBAB</div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">BLACKPEPPER KEBAB</div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">CHEESE KEBAB</div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">SUPREME KEBAB</div>
+                            <div class="card-alacarte" onclick="menu(this.innerHTML)">PLACEHOLDER</div>
                         </div>
                     </div>
                 </div>
@@ -237,53 +204,11 @@
                 <b>VARIAN</b>
                     <button type="button" class="btn btn-var">BIG</button>
                     <button type="button" class="btn btn-var">SMALL</button>       
-                <hr/>
-                <b>TOPPING</b>
-                    <button type="button" class="btn btn-topping">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">PILIH<b class="caret"></b></a>
-                        <ul class="dropdown-menu checkbox-menu allow-focus">
-                            <li> <div class="checkbox">
-                                    <label><input type="checkbox">EGG</label>
-                            </div> </li>
-                            <li>
-                            <li> <div class="checkbox">
-                                    <label><input type="checkbox">VEGGIES</label>
-                            </div> </li>
-                            <li>
-                            <li> <div class="checkbox">
-                                    <label><input type="checkbox">MUSHROOM</label>
-                            </div> </li>
-                            <li>
-                            <li> <div class="checkbox">
-                                    <label><input type="checkbox">EXTRA MEAT</label>
-                            </div> </li>
-                            <li>
-                            <li> <div class="checkbox">
-                                    <label><input type="checkbox">BBQ SCE</label>
-                            </div> </li>
-                            <li>
-                            <li> <div class="checkbox">
-                                    <label><input type="checkbox">BLKPPR SCE</label>
-                            </div> </li>
-                            <li>
-                            <li> <div class="checkbox">
-                                    <label><input type="checkbox">CHEESE</label>
-                            </div> </li>
-                            <li>
-                            <li> <div class="checkbox">
-                                    <label><input type="checkbox">SMK BEEF</label>
-                            </div> </li>
-                            <li>
-                            <li> <div class="checkbox">
-                                    <label><input type="checkbox">CHEESE MAYO</label>
-                            </div> </li>
-                            <li>
-                            <li> <div class="checkbox">
-                                    <label><input type="checkbox">GRL ONION</label>
-                            </div> </li>
-                            <li>
-                        </ul>
-                    </button>
+                    <hr/>
+                <b>SAUCE</b>
+                    <button type="button" class="btn btn-topping">BBQ</button>
+                    <button type="button" class="btn btn-topping">CHEESE</button>
+                    <button type="button" class="btn btn-topping">BLACKPEPPER</button>
                 <hr/>
                 <b>KEPEDASAN</b>  
                 <button type="button" class="btn btn-pedas">NOT SPICY</button>
@@ -300,11 +225,11 @@
                             <button type="button" class="btn btn-order btn-danger">-</button>
                     </div>
                     <hr/>
-                    <div class="border5" style="max-height:24em; overflow-y: scroll">
+                    <div class="border5" style="max-height:24em; overflow-y: scroll; overflow-x:scroll">
                         <table class="table-striped">
                             <thead style="height: 1.25em; border-bottom-color: #EDEDED">
                                 <tr>
-                                     <th class="header-kasir" style="wodth: 40px"><h6">ID</h6></th>
+                                    <th class="header-kasir" style="width: 50px"><h6>ID</h6></th>
                                     <th class="header-kasir" style="width: 300px"><h6>Menu</h6></th>
                                     <th class="header-kasir"><h6">Harga</h6></th>
                                     <th class="header-kasir"><h6">Jumlah</h6></th>
@@ -313,12 +238,124 @@
                             </thead>
                             <tbody id="tbod">
                                 <tr style="height: 20px">
-                                    <td>contoh1</td>
-                                    <td>contoh1</td>
-                                    <td>contoh1</td>
-                                    <td>contoh1</td>
-                                    <td>contoh1</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
                                 </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>
+                                <tr style="height: 20px">
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                    <td>alt</td>
+                                </tr>                           
                             </tbody>
                         </table>
                     </div>
