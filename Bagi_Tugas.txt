@@ -10,8 +10,7 @@ Tugas umum:
 > Extra: MySQL
 
 Tugas:
-> Jovan: Buat tampilan kassa jadi interaktif
 > Cara mengkoneksikan ketiga media
-> Front end: Anna, Ian, Hasna, Sulis, Holly, Yan, Ikhsan
+> Front end: Anna, Ian, Hasna, Sulis, Holly, Ikhsan
 > Back end: Naufal, Ernest, Daffa, Ihza, Brandon, Rizkin, Cisco
 > Full stack: Ananda, Jovan (memantau)
