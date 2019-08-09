@@ -22,6 +22,8 @@
 		    	$_SESSION['login_invalid'] = true;
 		        header("Location: ../login");
 		    }
+
+		    mysqli_close($connection);
 		} 
 	}
 ?>
