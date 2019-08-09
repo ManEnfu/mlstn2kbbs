@@ -139,10 +139,11 @@
 
 .btn-topping {
   padding: 0.5rem;
+  margin: 0.5rem;
   width: 150px;
   font-weight: bold;
   color: white;
-  background-color: #af7d00;
+  background-color: #ffd000;
 }
 
 .checkbox-menu li label {
