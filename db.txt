@@ -6,7 +6,6 @@ CREATE TABLE login(
   	password varchar(255) NOT NULL,
 	  PRIMARY KEY (id),
 	  UNIQUE (username)
-	  
 );
 
 INSERT INTO login (username, password) VALUES ('username', 'password');
