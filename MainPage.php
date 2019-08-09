@@ -63,7 +63,7 @@
                         $i = 0;
                         echo '<div class="col-lg-12 d-flex flex-wrap justify-content-around">';
                         while ($i < count($menus)) {
-                            echo '<div class="card-container">
+                            echo '<div class="card-container" onclick="neworder(' . $menus[$i]["id"] . ', \'' . $menus[$i]["nama"] . '\', ' . $menus[$i]["harga"] . ', 1)">
                                     <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                                     <div class="card-alacarte">' . $menus[$i]["nama"] . '</div>
                                 </div>';
@@ -80,7 +80,7 @@
                         $i = 0;
                         echo '<div class="col-lg-12 d-flex flex-wrap justify-content-around">';
                         while ($i < count($menus)) {
-                            echo '<div class="card-container">
+                            echo '<div class="card-container" onclick="neworder(' . $menus[$i]["id"] . ', \'' . $menus[$i]["nama"] . '\', ' . $menus[$i]["harga"] . ', 1)">
                                     <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                                     <div class="card-combo">' . $menus[$i]["nama"] . '</div>
                                 </div>';
@@ -96,7 +96,7 @@
                         $i = 0;
                         echo '<div class="col-lg-12 d-flex flex-wrap justify-content-around">';
                         while ($i < count($menus)) {
-                            echo '<div class="card-container">
+                            echo '<div class="card-container" onclick="neworder(' . $menus[$i]["id"] . ', \'' . $menus[$i]["nama"] . '\', ' . $menus[$i]["harga"] . ', 1)">
                                     <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                                     <div class="card-snack">' . $menus[$i]["nama"] . '</div>
                                 </div>';
@@ -113,7 +113,7 @@
                         $i = 0;
                         echo '<div class="col-lg-12 d-flex flex-wrap justify-content-around">';
                         while ($i < count($menus)) {
-                            echo '<div class="card-container">
+                            echo '<div class="card-container" onclick="neworder(' . $menus[$i]["id"] . ', \'' . $menus[$i]["nama"] . '\', ' . $menus[$i]["harga"] . ', 1)">
                                     <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                                     <div class="card-drink">' . $menus[$i]["nama"] . '</div>
                                 </div>';
@@ -130,7 +130,7 @@
                         $i = 0;
                         echo '<div class="col-lg-12 d-flex flex-wrap justify-content-around">';
                         while ($i < count($menus)) {
-                            echo '<div class="card-container">
+                            echo '<div class="card-container" onclick="neworder(' . $menus[$i]["id"] . ', \'' . $menus[$i]["nama"] . '\', ' . $menus[$i]["harga"] . ', 1)">
                                     <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                                     <div class="card-dessert">' . $menus[$i]["nama"] . '</div>
                                 </div>';
@@ -203,10 +203,35 @@
         </div> 
         <div class="col-lg-5" style="background-color:#EDEDED; padding:0%">
             <!-- $$$ ORDER $$$ -->
+            <!-- $$$ ORDER $$$ -->
             <div class="border5">
-                <button type="button" class="btn btn-order-plus">+</button>
-                <b style="margin: 0 9rem 0 9rem; font-size: 18px;">ORDER</b>
-                <button type="button" class="btn btn-order-min">-</button>
+                <div class="row d-flex justify-content-between" style="padding:0 1rem">
+                        <button type="button" class="btn btn-order btn-success">+</button>
+                        <b class="align-middle" style="font-size: 20px">ORDER</b>
+                        <button type="button" class="btn btn-order btn-danger">-</button>
+                </div>
+                <hr/>
+                <div class="border5" style="max-height:24em; overflow-y: scroll">
+                    <table class="table-striped">
+                        <thead style="height: 1.25em; border-bottom-color: #EDEDED">
+                            <tr>
+                                 <th class="header-kasir" style="wodth: 40px"><h6">ID</h6></th>
+                                <th class="header-kasir" style="width: 300px"><h6>Menu</h6></th>
+                                <th class="header-kasir"><h6">Harga</h6></th>
+                                <th class="header-kasir"><h6">Jumlah</h6></th>
+                                <th class="header-kasir"><h6">Total</h6></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbod">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="border5" style="margin: 0">
+                    <div class="row d-flex justify-content-end">
+                        <button type="button" class="btn btn-kasir" style="background-color: dodgerblue">PROSES</button>
+                        <button type="button" class="btn btn-kasir" style="background-color: firebrick">CLEAR</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -226,6 +251,26 @@ function myFunction(evt, namamenu) {
     document.getElementById(namamenu).style.display = "block";
     evt.currentTarget.className += " active";
 }
+    function neworder(id, menu, harga, jumlah) {
+        var tbod = document.getElementById('tbod');
+        var row = document.createElement('TR');
+        var c1 = document.createElement('TD');
+        c1.appendChild(document.createTextNode(id));
+        var c2 = document.createElement('TD');
+        c2.appendChild(document.createTextNode(menu));
+        var c3 = document.createElement('TD');
+        c3.appendChild(document.createTextNode(harga));
+        var c4 = document.createElement('TD');
+        c4.appendChild(document.createTextNode(jumlah));
+        var c5 = document.createElement('TD');
+        c5.appendChild(document.createTextNode(jumlah * harga));
+        row.appendChild(c1);
+        row.appendChild(c2);
+        row.appendChild(c3);
+        row.appendChild(c4);
+        row.appendChild(c5);
+        tbod.appendChild(row);
+    }
     document.getElementById("defaultopen").click()
 </script>
 
