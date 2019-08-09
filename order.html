@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script src="javascript/script.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="./javascript/order.js"></script>
+</head>
+<body>    
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <button onClick="setMenu(this.innerHTML);">Pisang</button>
+                <button onClick="setMenu(this.innerHTML);">Apel</button>
+            </div>
+            <div class="col-3">
+                <button onClick="setVariant(this.innerHTML);">Big</button>
+                <button onClick="setVariant(this.innerHTML);">Medium</button>
+                <button onClick="setVariant(this.innerHTML);">Smol</button>
+            </div>
+            <div class="col-3">
+                    <button type="button" class="btn btn-topping">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">PILIH<b class="caret"></b></a>
+                            <ul class="dropdown-menu checkbox-menu allow-focus">
+                                <li> <div class="checkbox">
+                                        <label><input type="checkbox" id="egg-check">EGG</label>
+                                </div> </li>
+                                <li>
+                                <li> <div class="checkbox">
+                                        <label><input type="checkbox" id="veggies-check">VEGGIES</label>
+                                </div> </li>
+                                <li>
+                                <li> <div class="checkbox">
+                                        <label><input type="checkbox" id="mushroom-check">MUSHROOM</label>
+                                </div> </li>
+                                <li>
+                                <li> <div class="checkbox">
+                                        <label><input type="checkbox" id="meat-check">EXTRA MEAT</label>
+                                </div> </li>
+                                <li>
+                                <li> <div class="checkbox">
+                                        <label><input type="checkbox" id="bbq-check">BBQ SCE</label>
+                                </div> </li>
+                                <li>
+                                <li> <div class="checkbox">
+                                        <label><input type="checkbox" id="blkppr-check">BLKPPR SCE</label>
+                                </div> </li>
+                                <li>
+                                <li> <div class="checkbox">
+                                        <label><input type="checkbox" id="cheese-check">CHEESE</label>
+                                </div> </li>
+                                <li>
+                                <li> <div class="checkbox">
+                                        <label><input type="checkbox" id="smkbeef-check">SMK BEEF</label>
+                                </div> </li>
+                                <li>
+                                <li> <div class="checkbox">
+                                        <label><input type="checkbox" id="cheese-check">CHEESE MAYO</label>
+                                </div> </li>
+                                <li>
+                                <li> <div class="checkbox">
+                                        <label><input type="checkbox" id="onion-check">GRL ONION</label>
+                                </div> </li>
+                                <li>
+                            </ul>
+                        </button>
+            </div>
+            <div class="col-3">
+                <button onClick="setLevel(this.innerHTML)">1</button>
+                <button onClick="setLevel(this.innerHTML)">2</button>
+                <button onClick="setLevel(this.innerHTML)">3</button>
+            </div>
+        </div>
+        
+        <div class="row text-center">
+            <div class="col-12 title-bar">
+                <div class="row text-center">
+                    <div class="col-3 title-button">
+                        <button onclick="addMenu();addItem();">add</button>
+                    </div>
+                    <div class="col-6 title-text">
+                        <p>PAYMENT</p>
+                    </div>
+                    <div class="col-3 title-button">
+                        <button>subtract</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12" id="item-list">
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">SUBTOTAL</div>
+                    <div class="col-6" id="price-total">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-6">Menu</div>
+                <div class="col-2">Quantity</div>
+                <div class="col-4">Price</div>
+        </div>
+    </div>
+</body>
+</html>

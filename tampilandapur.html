@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Tampilan Dapur</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </head>
+  <head>
+    <title>Tampilan Dapur</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d31c89c165.js"></script>
+    <link rel="stylesheet" href="Assets/css/main.css">
+    <script src="Assets/js/dropdown.js"></script>
+
+</head>
 <body>
 
-<div class="container-fluid" style="background-color:#ffe942; max-width: 100%">  
+<div class="container-fluid" style="background-color:#ffe942; max-width: 100%; margin: 0%">  
 <br>
-  <table class="table table-fluid table-bordered" style="margin:0 auto; width: 70%; height: auto; font-family: Verdana, Geneva, Tahoma, sans-serif">
+  <table class="table table-fluid table-bordered" style="margin:0 auto; width: 70%; height: auto; font-size: 18px; overflow-y: scroll">
           <thead style="color:white;">
       <tr class="text-center" bgcolor="#b10000">
         <th  style="width: 20%;"><h3 class="font-weight-bold">ORDER</h3></th>
@@ -72,16 +80,19 @@
     </tbody>
   </table>
   <br>
-  <a><img src="Assets/logo.png" style="width:130px; margin-left: 15%" ></a>
-  
-  <button type="button" style="margin-left: 450px; padding: 20px 40px 20px 40px; background-color: #017500; color: white; font-family:Verdana, Geneva, Tahoma, sans-serif">
-    READY</button>
-  <button type="button" style= "padding: 20px 40px; background-color: firebrick; color: white; font-family:Verdana, Geneva, Tahoma, sans-serif">
-    CLEAR</button>
-    
-  
-</div>
-
+  <div class="container-fluid" style="margin: 0 auto; width: 70%">
+    <div class="row">
+      <div class="col-sm-6 text-left">
+        <a><img src="Assets/logo.png" style="width:130px;" ></a>
+      </div>
+      <div class="col-sm-6 text-right">
+          <button type="button" class="btn btn-dapur" style="background-color: #017500; color: white;">
+              READY</button>
+          <button type="button" class="btn btn-dapur" style= "background-color: firebrick; color: white;">
+              CLEAR</button>
+       </div>
+    </div>
+  </div>
 
 </body>
 </html>

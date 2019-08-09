@@ -1,38 +1,39 @@
 function addItem(name, price)
 {
-    var x = document.getElementById("item-list");
+    //var x = document.getElementById("item-list");
     var p = createMenuItem(name, price);
     x.append(p);
-    updatePrice(price);
+    //updatePrice(price);
 }
+
+var id=1;
 
 function createMenuItem()
 {
     if(name!='-1')
     {
-        var row = document.createElement("div");
-        row.setAttribute("class", "row");
-        
-        var col_name = document.createElement("div");
-        col_name.setAttribute("class", "col-6");
-        col_name.innerHTML = name;
-        if(variant!='-1') col_name.innerHTML+=', ' + variant;
-        if(topping!='-1') col_name.innerHTML+=', ' + topping;
-        col_name.innerHTML+=', '+level;
+        var table = document.getElementById("menu-list");
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        var td2 = document.createElement("td");
+        var td3 = document.createElement("td");
+        var td4 = document.createElement("td");
+        var td5 = document.createElement("td");
 
-        var col_price = document.createElement("div");
-        col_price.setAttribute("class", "col-5");
-        col_price.innerHTML = menuPrice.get(name);
-    
-        var col_button = document.createElement("button");
-        col_button.setAttribute("class", "col-1");
-        col_button.innerHTML = 'subtract';
-        
-        row.append(col_name);
-        row.append(col_price);
-        row.append(col_button);
-    
-        return row;
+        td1.innerHTML = id++;
+        tr.appendChild(td1);
+        td2.innerHTML = name + ' ' + topping;
+        tr.appendChild(td2);
+        td3.innerHTML = variant;
+        tr.appendChild(td3);
+        td4.innerHTML = level;
+        tr.appendChild(td4);
+        td5.innerHTML = 25000;
+        tr.appendChild(td5);
+
+
+        table.append(tr);
+
     }
 }
 
@@ -49,10 +50,6 @@ var name = '-1';
 var variant = '-1';
 var topping = '-1';
 var level = 0;
-
-var menuPrice = new Map();
-menuPrice.set('Pisang', 6000);
-menuPrice.set('Apel', 5000);
 
 function setMenu(itemName)
 {
