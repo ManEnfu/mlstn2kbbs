@@ -4,20 +4,14 @@
     <title>Cash Register Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
+        <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     <script src="https://kit.fontawesome.com/d31c89c165.js"></script>
     <link rel="stylesheet" href="Assets/css/main.css">
-    <script src="Assets/js/dropdown.js"></script>
 
 </head>
-<body style="background-color: #EDEDED">
+<body>
 
 <!-- ### NAVIGATION BAR ### -->
 <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between" style="background-color: #FCCC12; padding:0.2rem 1.5rem">
@@ -36,16 +30,18 @@
 </nav>
 
 <!-- ### CONTENT ### -->
-<div class="container" style="max-width: 100%; margin:0%;">
+<div class="container" style="max-width: 100%; margin:0%">
     <div class="row">
         <div class="col-lg-5" style="background-color: #EDEDED; padding:0%">
-            <!-- $$$ MENU $$$ -->
             <div class="border5">
+                    <!-- $$$ MENU $$$ -->
                 <div class="tab">
-                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
-                        <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'ala carte')" id="defaultopen"> ALA CARTE</button>
+                    <div class="col-lg-12 d-flex justify-content-around">
+                        <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'ala carte')"> ALA CARTE</button>
                         <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'combo')"> COMBO</button>
                         <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'snack')"> SNACK</button>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-around" style="padding: 0 7rem; margin: 1rem 0">
                         <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'drinks')"> DRINKS</button>
                         <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'dessert')"> DESSERT</button>
                     </div>
@@ -53,44 +49,46 @@
                 <hr/>
 
                 <div id="ala carte" class="tabcontent">
-                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
-                        <div class="card-container"onclick>
+                    <div class="col-lg-12 d-flex justify-content-around">
+                        <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">CLASSIC KEBAB</div>
+                            <div class="card-combo">CLASSIC KEBAB</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">FULLBEEF KEBAB</div>
+                            <div class="card-combo">FULLBEEF KEBAB</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">VEGETABLE KEBAB</div>
+                            <div class="card-combo">VEGETABLE KEBAB</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">SMOKE BEEF KEBAB</div>
+                            <div class="card-combo">SMOKE BEEF KEBAB</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-around">
+                        <div class="card-container">
+                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                            <div class="card-combo">BARBEQUE KEBAB</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">BARBEQUE KEBAB</div>
+                            <div class="card-combo">BLACKPEPPER KEBAB</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">BLACKPEPPER KEBAB</div>
+                            <div class="card-combo">CHEESE KEBAB</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">CHEESE KEBAB</div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-alacarte">SUPREME KEBAB</div>
+                            <div class="card-combo">SUPREME KEBAB</div>
                         </div>
                     </div>
                 </div>
 
                 <div id="combo" class="tabcontent">
-                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
+                    <div class="col-lg-12 d-flex justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-combo">COMBO CLASSIC</div>
@@ -107,6 +105,8 @@
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-combo">COMBO SMOKE BEEF</div>
                         </div>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-combo">COMBO BARBEQUE</div>
@@ -127,107 +127,125 @@
                 </div>
 
                 <div id="snack" class="tabcontent">
-                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
+                    <div class="col-lg-12 d-flex justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">CIRENG</div>
+                            <div class="card-combo">CIRENG</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">TELOR GULUNG</div>
+                            <div class="card-combo">TELOR GULUNG</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">MUSHROOM</div>
+                            <div class="card-combo">MUSHROOM</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">INDOMIE</div>
+                            <div class="card-combo">INDOMIE</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-around">
+                        <div class="card-container">
+                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                            <div class="card-combo">GRILLED ONION</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">GRILLED ONION</div>
+                            <div class="card-combo">NASJEP</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">BACON</div>
+                            <div class="card-combo">BACON</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">PANCAKE</div>
+                            <div class="card-combo">PANCAKE</div>
                         </div>
                     </div>
                 </div>
 
                 <div id="drinks" class="tabcontent">
-                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
+                    <div class="col-lg-12 d-flex justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-drink">ICE TEA</div>
+                            <div class="card-combo">ICE TEA</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-drink">LEMON TEA</div>
+                            <div class="card-combo">LEMON TEA</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-drink">LYCHEA TEA</div>
+                            <div class="card-combo">LYCHEA TEA</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-drink">MANGO TEA</div>
+                            <div class="card-combo">MANGO TEA</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-around">
+                        <div class="card-container">
+                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                            <div class="card-combo">COCA COLA</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-drink">COCA COLA</div>
+                            <div class="card-combo">MINERAL WATER</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-drink">MINERAL WATER</div>
+                            <div class="card-combo">GREEN TEA</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-drink">GREEN TEA</div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-drink">COFFEE</div>
+                            <div class="card-combo">COFFEE</div>
                         </div>
                     </div>
                 </div>
 
-                <div id="dessert" class="tabcontent">   
-                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
+                <div id="dessert" class="tabcontent">
+                    <div class="col-lg-12 d-flex justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-dessert">ICE CREAM</div>
+                            <div class="card-combo">ICE CREAM</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-dessert">BANANA SPLIT</div>
+                            <div class="card-combo">BANANA SPLIT</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-dessert">BROWNIE</div>
+                            <div class="card-combo">BROWNIE</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-dessert">PUDDING</div>
+                            <div class="card-combo">COOKIE</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex justify-content-around">
+                        <div class="card-container">
+                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                            <div class="card-combo">PUDDING</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-dessert">JELL-O</div>
+                            <div class="card-combo">DOUGHNUT</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-dessert">PIE</div>
+                            <div class="card-combo">JELL-O</div>
+                        </div>
+                        <div class="card-container">
+                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                            <div class="card-combo">PIE</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 d-flex flex-wrap justify-content-center" style="background-color:#EDEDED; padding:0%">
-            <!-- $$$ VARIAN, TOPPING, KEPEDASAN $$$ -->
+        <!-- $$$ VARIAN, TOPPING, KEPEDASAN $$$ -->
+        <div class="col-lg-2 text-center" style="background-color:#EDEDED; padding:0%">
             <div class="border5">
                 <b>VARIAN</b>
                     <button type="button" class="btn btn-var">BIG</button>
@@ -235,8 +253,8 @@
                 <hr/>
                 <b>TOPPING</b>
                     <button type="button" class="btn btn-topping">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">PILIH<b class="caret"></b></a>
-                        <ul class="dropdown-menu checkbox-menu allow-focus">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown Form<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">EGG</label>
                             </div> </li>
@@ -287,29 +305,17 @@
             </div>
         </div> 
         <div class="col-lg-5" style="background-color:#EDEDED; padding:0%">
-            <!-- $$$ ORDER $$$ -->
             <div class="border5">
-                <button type="button" class="btn btn-success" style="padding: 0.4rem; margin: 0.8rem 1.2rem 3rem 10px; width: 50px">+</button>
+                <button type="button" class="btn btn-success" style= "padding: 5px; margin: 10px 15px 40px 10px; width: 50px">+</button> 
                 <b style="margin-left: 75px; font-size: 18px;">ORDER</b>
-                <button type="button" class="btn btn-danger" style="padding: 0.4rem; margin: 0.8rem 1.2rem 3rem 90px; width: 50px">-</button>
-                <hr>
-                <div class="border5" style="height: 500px; margin: -1em 0em;">
-                    <table>
-                        <thead style="height: 20px; border-bottom-color: #EDEDED">
-                            <tr>
-                                <th class="text-center" style="width: 300px"><h6  class="font-weight-bold">Menu</h6></th>
-                                <th class="text-center" style="width: 100px"><h6  class="font-weight-bold">Harga</h6></th>
-                                <th class="text-center" style="width: 100px"><h6  class="font-weight-bold">Jumlah</h6></th>
-                                <th class="text-center" style="width: 100px"><h6  class="font-weight-bold">Total</h6></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="height: 20px"></tr>
-                        </tbody>
-                    </table>
-                </div>
+                <button type="button" class="btn btn-danger" style= "padding: 5px; margin: 10px 15px 40px 90px; width: 50px">-</button> 
             </div>
         </div>
+               
+        <div class="col-4" style="background-color: #FFFFFF; margin: 1rem; padding:1rem">
+        <button type="button" class="btn btn-success" style= "padding: 0.4rem; margin: 0.8rem 1.2rem 3rem 10px; width: 50px">+</button> 
+        <b style="margin-left: 75px; font-size: 18px;">ORDER</b>
+        <button type="button" class="btn btn-danger" style= "padding: 0.4rem; margin: 0.8rem 1.2rem 3rem 90px; width: 50px">-</button> 
     </div>
 </div>    
 
@@ -327,8 +333,13 @@ function myFunction(evt, namamenu) {
     document.getElementById(namamenu).style.display = "block";
     evt.currentTarget.className += " active";
 }
-    document.getElementById("defaultopen").click()
 </script>
 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 </body>
 </html>
