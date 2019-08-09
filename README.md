@@ -20,6 +20,7 @@ Proyek ini merupakan implementasi dalam bentuk MVP (Minimum Viable Product) dari
 ## Deployment
 1. Jalankan local server
 2. Buka alamat localhost/mlstn2kbbs
+3. login dengan username 'username' dan password 'password'
 
 ## Built With
 * HTML
