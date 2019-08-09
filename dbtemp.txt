@@ -56,5 +56,5 @@ CREATE TABLE pesanan(
 INSERT INTO pesanan(pelangganID, menuID) VALUE (1,1);
 INSERT INTO pesanan(pelangganID, menuID) VALUE (1,2);
 INSERT INTO pesanan(pelangganID, menuID) VALUE (2,4);
-INSERT INTO pesanan(pelangganID, menuID) VALUE (3,3);
+INSERT INTO pesanan(pelangganID, menuID) VALUE (3,2);
 
