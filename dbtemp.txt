@@ -1,0 +1,69 @@
+CREATE DATABASE kabobs;
+USE kabobs;
+CREATE TABLE login(
+	id int(11) NOT NULL AUTO_INCREMENT,
+  	username varchar(255) NOT NULL,
+  	password varchar(255) NOT NULL,
+	  PRIMARY KEY (id),
+	  UNIQUE (username)
+);
+
+INSERT INTO login (username, password) VALUES ('username', 'password');
+
+CREATE DATABASE kabobs;
+USE kabobs;
+CREATE TABLE menu (
+	id int(11) NOT NULL AUTO_INCREMENT,
+	nama varchar(255) NOT NULL,
+	harga int(11) NOT NULL,
+	kategori enum('a la carte','combo','drink','dessert','snack'),
+);
+
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('CLASSIC KEBAB', 18000, 'a la carte');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('FULLBEEF KEBAB', 20000, 'a la carte');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('VEGETABLE KEBAB', 16000, 'a la carte');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('ICE TEA', 7000, 'drink');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('LEMON TEA', 10000, 'drink');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('COMBOBS2', 69000, 'combo');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('COMBOBS FAMILY', 129000, 'combo');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('ICE CREAM', 12000, 'dessert');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('BANANA SPLIT', 13000, 'dessert');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('CIRENG', 7000, 'snack');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('TELOR GULUNG', 12000, 'snack');
+
+
+CREATE TABLE pelanggan(
+	id int(11) NOT NULL AUTO_INCREMENT,
+	nama varchar(255),
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE pesanan(
+	id int(11) NOT NULL AUTO_INCREMENT,
+	NAMApelanggan varchar(255),
+	ADD FOREIGN KEY (IDMenu) REFERENCES menu (id),
+	Jumlah int(11) NOT NULL,
+	Ukuran enum("Small","Big"),
+	Topping enum("garlic","veggies","egg","mushroom","extra meat","bbq sauce","blackpepper sauce","cheese","smoke beef","cheese mayo sauce","grilled onion"), 
+	Kepedasan("not spicy","medium spicy","spicy")
+
+)
+
+
+INSERT INTO pelanggan (nama) VALUES ('Bosque 1');
+INSERT INTO pelanggan (nama) VALUES ('Bosque 2');
+INSERT INTO pelanggan (nama) VALUES ('Bosque 3');
+INSERT INTO pelanggan (nama) VALUES ('Bosque 4');
+
+
