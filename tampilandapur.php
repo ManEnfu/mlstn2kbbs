@@ -1,6 +1,6 @@
 <?php 
   require "functions.php";
-  require "db_connect.php"
+  require "db_connect.php";
   $orders = query($connection, "SELECT * FROM pesanan");
  ?>
 
@@ -45,7 +45,7 @@
 
       <?php $i++;
         endforeach;
-        $order_clicked = $order["id"]; //testing
+        $order_clicked = $order["id"];   //testing
        ?>
       
  

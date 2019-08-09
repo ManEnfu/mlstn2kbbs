@@ -15,6 +15,11 @@
     <script src="https://kit.fontawesome.com/d31c89c165.js"></script>
     <link rel="stylesheet" href="Assets/css/main.css">
     <script src="Assets/js/dropdown.js"></script>
+    <style>
+        #tbl1 {}
+        table {}
+        tr {height: 20px}
+    </style>
 
 </head>
 <body style="background-color: #EDEDED">
@@ -54,7 +59,7 @@
 
                 <div id="ala carte" class="tabcontent">
                     <div class="col-lg-12 d-flex flex-wrap justify-content-around">
-                        <div class="card-container"onclick>
+                        <div class="card-container" onclick="neworder(1, 'CLASSIC KEBAB', 15000, 1)">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-alacarte">CLASSIC KEBAB</div>
                         </div>
@@ -280,180 +285,51 @@
                         </ul>
                     </button>
                 <hr/>
-                <b>KEPEDASAN</b>
+                <b>KEPEDASAN</b>  
                 <button type="button" class="btn btn-pedas">NOT SPICY</button>
                 <button type="button" class="btn btn-pedas">MEDIUM SPICY</button>
                 <button type="button" class="btn btn-pedas">SPICY</button>
             </div>
         </div> 
         <div class="col-lg-5" style="background-color:#EDEDED; padding:0%">
-            <!-- $$$ ORDER $$$ -->
-            <div class="border5">
-                <button type="button" class="btn btn-order-plus">+</button>
-                <b style="margin: 0 9rem 0 9rem; font-size: 18px;">ORDER</b>
-                <button type="button" class="btn btn-order-min">-</button>
-                <hr>
-                <div class="border5 my-scrollbar table-wrapper-scroll-y" style="height: 500px; margin: -1em 0em;">
-                    <table class="table-bordered">
-                        <thead style="height: 20px; border-bottom-color: #EDEDED">
-                            <tr>
-                                <th class="text-center" style="width: 300px"><h6  class="font-weight-bold">Menu</h6></th>
-                                <th class="text-center" style="width: 100px"><h6  class="font-weight-bold">Harga</h6></th>
-                                <th class="text-center" style="width: 100px"><h6  class="font-weight-bold">Jumlah</h6></th>
-                                <th class="text-center" style="width: 100px"><h6  class="font-weight-bold">Total</h6></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                            <tr style="height: 20px">
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                                <td>contoh1</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- $$$ ORDER $$$ -->
+                <div class="border5">
+                    <div class="row d-flex justify-content-between" style="padding:0 1rem">
+                            <button type="button" class="btn btn-order btn-success">+</button>
+                            <b class="align-middle" style="font-size: 20px">ORDER</b>
+                            <button type="button" class="btn btn-order btn-danger">-</button>
+                    </div>
+                    <hr/>
+                    <div class="border5" style="max-height:24em; overflow-y: scroll">
+                        <table class="table-striped">
+                            <thead style="height: 1.25em; border-bottom-color: #EDEDED">
+                                <tr>
+                                     <th class="header-kasir" style="wodth: 40px"><h6">ID</h6></th>
+                                    <th class="header-kasir" style="width: 300px"><h6>Menu</h6></th>
+                                    <th class="header-kasir"><h6">Harga</h6></th>
+                                    <th class="header-kasir"><h6">Jumlah</h6></th>
+                                    <th class="header-kasir"><h6">Total</h6></th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbod">
+                                <tr style="height: 20px">
+                                    <td>contoh1</td>
+                                    <td>contoh1</td>
+                                    <td>contoh1</td>
+                                    <td>contoh1</td>
+                                    <td>contoh1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="border5" style="margin: 0">
+                        <div class="row d-flex justify-content-end">
+                            <button type="button" class="btn btn-kasir" style="background-color: dodgerblue">PROSES</button>
+                            <button type="button" class="btn btn-kasir" style="background-color: firebrick">CLEAR</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
-    </div>
 </div>    
 
 <script>
@@ -470,7 +346,27 @@ function myFunction(evt, namamenu) {
     document.getElementById(namamenu).style.display = "block";
     evt.currentTarget.className += " active";
 }
-    document.getElementById("defaultopen").click()
+    function neworder(id, menu, harga, jumlah) {
+        var tbod = document.getElementById('tbod');
+        var row = document.createElement('TR');
+        var c1 = document.createElement('TD');
+        c1.appendChild(document.createTextNode(id));
+        var c2 = document.createElement('TD');
+        c2.appendChild(document.createTextNode(menu));
+        var c3 = document.createElement('TD');
+        c3.appendChild(document.createTextNode(harga));
+        var c4 = document.createElement('TD');
+        c4.appendChild(document.createTextNode(jumlah));
+        var c5 = document.createElement('TD');
+        c5.appendChild(document.createTextNode(jumlah * harga));
+        row.appendChild(c1);
+        row.appendChild(c2);
+        row.appendChild(c3);
+        row.appendChild(c4);
+        row.appendChild(c5);
+        tbod.appendChild(row);
+    }
+    document.getElementById("defaultopen").click();
 </script>
 
 </body>
