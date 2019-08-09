@@ -210,7 +210,7 @@
                     <button type="button" class="btn btn-topping">CHEESE</button>
                     <button type="button" class="btn btn-topping">BLACKPEPPER</button>
                 <hr/>
-                <b>KEPEDASAN</b>
+                <b>KEPEDASAN</b>  
                 <button type="button" class="btn btn-pedas">NOT SPICY</button>
                 <button type="button" class="btn btn-pedas">MEDIUM SPICY</button>
                 <button type="button" class="btn btn-pedas">SPICY</button>
@@ -236,7 +236,7 @@
                                     <th class="header-kasir"><h6">Total</h6></th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="tbod">
                                 <tr style="height: 20px">
                                     <td>alt</td>
                                     <td>alt</td>
@@ -383,7 +383,27 @@ function myFunction(evt, namamenu) {
     document.getElementById(namamenu).style.display = "block";
     evt.currentTarget.className += " active";
 }
-    document.getElementById("defaultopen").click()
+    function neworder(id, menu, harga, jumlah) {
+        var tbod = document.getElementById('tbod');
+        var row = document.createElement('TR');
+        var c1 = document.createElement('TD');
+        c1.appendChild(document.createTextNode(id));
+        var c2 = document.createElement('TD');
+        c2.appendChild(document.createTextNode(menu));
+        var c3 = document.createElement('TD');
+        c3.appendChild(document.createTextNode(harga));
+        var c4 = document.createElement('TD');
+        c4.appendChild(document.createTextNode(jumlah));
+        var c5 = document.createElement('TD');
+        c5.appendChild(document.createTextNode(jumlah * harga));
+        row.appendChild(c1);
+        row.appendChild(c2);
+        row.appendChild(c3);
+        row.appendChild(c4);
+        row.appendChild(c5);
+        tbod.appendChild(row);
+    }
+    document.getElementById("defaultopen").click();
 </script>
 
 </body>

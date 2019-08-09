@@ -1,6 +1,6 @@
 <?php 
   require "functions.php";
-  require "db_connect.php"
+  require "db_connect.php";
   $orders = query($connection, "SELECT * FROM pesanan");
  ?>
 
