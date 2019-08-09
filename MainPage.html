@@ -13,17 +13,17 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/d31c89c165.js"></script>
-    <link rel="stylesheet" href="Assets/css/main.scss">
+    <link rel="stylesheet" href="Assets/css/main.css">
     
 
 </head>
-<body  style="background-color: #EDEDED; margin:0%">
+<body>
 
 <!-- ### NAVIGATION BAR ### -->
 <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between" style="background-color: #FCCC12; padding:0.2rem 1.5rem">
     <a class="navbar-brand" href="#"><img src="Assets/logo.png" style="width:70px"></a>
     <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle font-weight-bold" style="background-color:rgb(252, 143, 18)" data-toggle="dropdown" aria-haspopup="true"
+        <button type="button" class="btn btn-secondary dropdown-toggle font-weight-bold dropdown-account" style="background-color:rgb(252, 143, 18)" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
         Akun kasir
         </button>
@@ -36,60 +36,101 @@
 </nav>
 
 <!-- ### CONTENT ### -->
-<div class="container" style="background-color:#EDEDED; max-width: 100%; margin:1em">
-    <div class="row" style="background-color: #EDEDED">
-        <div class="col-5" style="background-color: #FFFFFF; margin: 1rem; padding:1rem">
-			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin: 0 15px 0 25px; width: 150px;">ALA CARTE</button>
-			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin-right: 15px; width: 150px;">COMBO</button>
-			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; width: 150px;">SNACK</button>
-			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0 110px; width: 150px;">DRINKS</button>
-			<button type="button" class="btn btn-info" style= "padding: 5px 30px 5px 30px; margin-top: 10px; width: 150px; margin-right: 50px;">DESSERT</button>
-        
-            <div class="card-container">
-                <div class="card-menu">
-                    <div class="card-menu-image">
+<div class="container" style="max-width: 100%; margin:0%">
+    <div class="row">
+        <div class="col-lg-5" style="background-color: #EDEDED; padding:0%">
+            <div class="border5">
+                    <!-- $$$ MENU $$$ -->
+                <div class="col-lg-12 d-flex justify-content-around">
+                    <button type="button" class="btn btn-nav"> ALA CARTE</button>
+                    <button type="button" class="btn btn-nav"> COMBO</button>
+                    <button type="button" class="btn btn-nav"> SNACK</button>
+                </div>
+                <div class="col-lg-12 d-flex justify-content-around" style="padding: 0 7rem; margin: 1rem 0">
+                        <button type="button" class="btn btn-nav"> DRINKS</button>
+                    <button type="button" class="btn btn-nav"> DESSERT</button>
+                </div>
+                <hr/>
+
+                <div class="col-lg-12 d-flex justify-content-around">
+                    <div class="card-container">
+                        <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                        <div class="card-combo">Dua</div>
                     </div>
-                        <p>Barbeque</p>
+                    <div class="card-container">
+                        <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                        <div class="card-combo">Dua</div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                        <div class="card-combo">Dua</div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                        <div class="card-combo">Dua</div>
+                    </div>
+                </div>
+                <div class="col-lg-12 d-flex justify-content-around">
+                    <div class="card-container">
+                        <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                        <div class="card-combo">Dua</div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                        <div class="card-combo">Dua</div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                        <div class="card-combo">Dua</div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
+                        <div class="card-combo">Dua</div>
+                    </div>
                 </div>
             </div>
-
-			<img src="Assets/kabobs.png" style="width:100px; margin-top:40px; cursor: pointer; height: 80px;"></a>
-			<div class="content">
-				<p>nama menu</p>
-			</div>
-			
-			<img src="Assets/kabobs.png" style="width:100px; cursor: pointer; height: 80px;"></a>
-			<div class="content">
-				<p>nama menu</p>
-			</div>
-			
-			<img src="Assets/kabobs.png" style="width:100px; margin-top:40px; cursor: pointer; height: 80px;"></a>
-			<div class="content">
-				<p>nama menu</p>
-			</div>
-			
         </div>
-        <div class="col-2" style="background-color: #FFFFFF; margin: 1rem; padding:1rem;"><b>VARIAN</b>
-			<button type="button" class="btn btn-success" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0 25px; width: 150px;">BIG</button>
-			<button type="button" class="btn btn-success" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 40px 25px; width: 150px;">SMALL</button>       
-                
-        <b>TOPPING</b>
-        <button type="button" class="btn btn-warning" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 40px 25px; width: 150px;">PILIH</button>
-        
-        <b>KEPEDASAN</b>
-        <button type="button" class="btn btn-danger" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0px 8px; width: 180px;">Not Spicy</button>
-        <button type="button" class="btn btn-danger" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0px 8px; width: 180px;">Medium Spicy</button>
-        <button type="button" class="btn btn-danger" style= "padding: 5px 30px 5px 30px; margin: 10px 15px 0px 8px; width: 180px;">Spicy</button>
+        <!-- $$$ VARIAN, TOPPING, KEPEDASAN $$$ -->
+        <div class="col-lg-2 text-center" style="background-color:#EDEDED; padding:0%">
+            <div class="border5">
+                <b>VARIAN</b>
+                    <button type="button" class="btn btn-var">BIG</button>
+                    <button type="button" class="btn btn-var">SMALL</button>       
+                <hr/>
+                <b>TOPPING</b>
+                    <button type="button" class="btn btn-topping">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown Form<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="checkbox">
+                                    <label><input type="checkbox">Two</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">Two
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </button>
+                <hr/>
+                <b>KEPEDASAN</b>
+                <button type="button" class="btn btn-pedas"">NOT SPICY</button>
+                <button type="button" class="btn btn-pedas"">MEDIUM SPICY</button>
+                <button type="button" class="btn btn-pedas"">SPICY</button>
+            </div>
+        </div> 
+        <div class="col-lg-5" style="background-color:#EDEDED; padding:0%">
+            <div class="border5">
+                <button type="button" class="btn btn-success" style= "padding: 5px; margin: 10px 15px 40px 10px; width: 50px">+</button> 
+                <b style="margin-left: 75px; font-size: 18px;">ORDER</b>
+                <button type="button" class="btn btn-danger" style= "padding: 5px; margin: 10px 15px 40px 90px; width: 50px">-</button> 
+            </div>
         </div>
-               
-        <div class="col-4" style="background-color: #FFFFFF; margin: 1rem; padding:1rem">
-        <button type="button" class="btn btn-success" style= "padding: 5px; margin: 10px 15px 40px 10px; width: 50px">+</button> 
-        <b style="margin-left: 75px; font-size: 18px;">ORDER</b>
-        <button type="button" class="btn btn-danger" style= "padding: 5px; margin: 10px 15px 40px 90px; width: 50px">-</button> 
     </div>
 </div>    
-    
-    
-    
+
 </body>
 </html>

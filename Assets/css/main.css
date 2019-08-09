@@ -1,33 +1,86 @@
+.border5 {
+  padding: 1em;
+  margin: 1em 1em;
+  background-color: #FFFFFF;
+}
+
+.kolom {
+  float: left;
+  width: 23.3%;
+  margin: 0.25rem;
+  background-color: grey;
+}
+
+.kolom p {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
 .card-container {
-  min-height: 2em;
+  max-width: 120px;
+  min-height: 120px;
+  margin: 1rem 0;
 }
 
-.card-container .card-menu {
-  height: 120px;
-  width: 23%;
-  margin: 1%;
-  background-color: gray;
-}
-
-.card-container .card-menu .card-menu-image {
-  min-height: 70%;
+.card-container .card-image {
   width: 100%;
   background-color: coral;
 }
 
-.card-container .card-menu p {
-  font-size: 12px;
+.card-container .card-alacarte {
+  min-height: 25px;
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
   text-align: center;
+  padding: 6%;
+  background-color: firebrick;
 }
 
-.sidenavigator {
-  height: 100%;
-  width: 90px;
-  position: fixed;
-  margin-top: 0;
-  left: 0;
-  background-color: #ffe942;
-  padding: 20px;
+.card-container .card-combo {
+  min-height: 25px;
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 6%;
+  background-color: #b26322;
+}
+
+.card-container .card-snack {
+  min-height: 25px;
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 6%;
+  background-color: #44b222;
+}
+
+.card-container .card-drink {
+  min-height: 25px;
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 6%;
+  background-color: #2290b2;
+}
+
+.card-container .card-dessert {
+  min-height: 25px;
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 6%;
+  background-color: #9a22b2;
 }
 
 .content {
@@ -45,5 +98,98 @@
 .content:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+/* Clearfix (clear floats) */
+.baris::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.topping_dropdown {
+  padding: 0.4rem;
+  width: 180px;
+}
+
+.btn-nav {
+  padding: 0.5em;
+  width: 9em;
+  font-weight: bold;
+  background-color: #98E6FF;
+}
+
+.btn-var {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 150px;
+  color: white;
+  font-weight: bold;
+  background-color: #00af00;
+}
+
+.btn-pedas {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 150px;
+  color: white;
+  font-weight: bold;
+  background-color: #af0000;
+}
+
+.btn-topping {
+  padding: 0.5rem;
+  width: 150px;
+  font-weight: bold;
+  color: white;
+  background-color: #af7d00;
+}
+
+.checkbox-menu li label {
+  display: block;
+  margin: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  font-weight: bold;
+  line-height: 1.42857143;
+  color: white;
+  white-space: nowrap;
+  margin: 0;
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+}
+
+.checkbox-menu li input {
+  margin: 0px 5px;
+  top: 2px;
+  position: relative;
+}
+
+.checkbox-menu li.active label {
+  background-color: #cbcbff;
+  font-weight: bold;
+}
+
+.checkbox-menu li label:hover,
+.checkbox-menu li label:focus {
+  background-color: #f5f5f5;
+}
+
+.checkbox-menu li.active label:hover,
+.checkbox-menu li.active label:focus {
+  background-color: #b8b8ff;
+}
+
+.dropdown-account {
+  width: 100%;
+}
+
+.dropdown-account p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown-account p {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
