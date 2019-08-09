@@ -45,7 +45,7 @@
 
       <?php $i++;
         endforeach;
-        $order_clicked = $order["id"]; //testing
+        $order_clicked = $order["id"];   //testing
        ?>
       
  
