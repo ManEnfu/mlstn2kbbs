@@ -26,56 +26,59 @@
   .card-image {
     width: 100%;
     background-color: coral;
+    margin : 0.2rem;
+
   }
 
   .card-alacarte{
-    min-height: 25px;
+    min-height: 50px;
     width:100%;
     font-size: 14px;
     color:white; 
     font-weight:bold;
     text-align: center;
-    padding:6%;
+    padding:4%;
     background-color: firebrick;
+    margin: 0.2rem;
   }
   .card-combo{
-    min-height: 25px;
+    min-height: 50px;
     width:100%;
     font-size: 14px;
     color:white; 
     font-weight:bold;
     text-align: center;
-    padding:6%;
+    padding:4%;
     background-color: rgb(178, 99, 34);
   }
   .card-snack{
-    min-height: 25px;
+    min-height: 50px;
     width:100%;
     font-size: 14px;
     color:white; 
     font-weight:bold;
     text-align: center;
-    padding:6%;
+    padding:4%;
     background-color: rgb(68, 178, 34);
   }
   .card-drink{
-    min-height: 25px;
+    min-height: 50px;
     width:100%;
     font-size: 14px;
     color:white; 
     font-weight:bold;
     text-align: center;
-    padding:6%;
+    padding:4%;
     background-color: rgb(34, 144, 178);
   }
   .card-dessert{
-    min-height: 25px;
+    min-height: 50px;
     width:100%;
     font-size: 14px;
     color:white; 
     font-weight:bold;
     text-align: center;
-    padding:6%;
+    padding:4%;
     background-color: rgb(154, 34, 178);
   }
 }
@@ -137,16 +140,17 @@
   color: white;
   background-color: rgb(255, 208, 0);
 }
+
 .checkbox-menu li label {
-  display: block;
-  margin: 0.5rem;
-  padding: 0.5rem 0.5rem;
-  font-weight: bold;
-  line-height: 1.42857143;
-  color: white;
-  white-space: nowrap;
-  margin:0;
-  transition: background-color .4s ease;
+    display: block;
+    padding: 3px 10px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    margin:0;
+    transition: background-color .4s ease;
 }
 .checkbox-menu li input {
     margin: 0px 5px;
@@ -168,7 +172,6 @@
 .checkbox-menu li.active label:focus {
     background-color: #b8b8ff;
 }
-
 .dropdown-account{
   width: 100%;
 
