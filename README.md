@@ -4,34 +4,19 @@ Proyek ini merupakan implementasi dalam bentuk MPV dari tugas keprofesian SPARTA
 ## Getting Started
 
 ### Prerequisites
-Dibutuhkan 2 buah laptop atau PC dan 1 buah tablet untuk menjalankan program ini.
+ Localhost server : Support Apache, MySQL, PHP
+
 
 ### Installing
-KASIR
-laptop atau PC untuk kasir digunakan untuk login dan input data order pelanggan
-1. Buka folder login
-2. Buka file login.php pada browser
-3. Masukkan user name dari database yang telah kami sediakan
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
+1. Simpan aplikasi web dibawah direktori www atau htdocs yang ada di program localhost server
+2. Jalankan server
+3. Buka phpmyadmin melalui browser
+4. Login dengan username "root" dan password ""
+5. Buat sql query menggunakan db_temp.txt
+6. Buka alamat localhost/mlstn2kbbs/login.php
+7. login dengan username "username" dan password "password"
 
 ## Running the tests
-
 
 
 ## Deployment
