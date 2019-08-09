@@ -46,8 +46,8 @@ INSERT INTO pelanggan (nama) VALUES ('Bosque 4');
 
 CREATE TABLE pesanan(
 	id int(11) NOT NULL AUTO_INCREMENT,
-	menuID int,
 	pelangganID int,
+	menuID int,
 	FOREIGN KEY(menuID) REFERENCES menu(menuID),
 	FOREIGN KEY(pelangganID) REFERENCES pelanggan(pelangganID),
 	PRIMARY KEY(id)
