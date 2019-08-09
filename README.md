@@ -1,5 +1,5 @@
 # SOLUSI IT PADA PERMASALAHAN KABOBS PREMIUM KEBAB
-Proyek ini merupakan implementasi dalam bentuk MPV dari tugas keprofesian SPARTA 2018. Secara umum proyek berbasis web  ini terbagi menjadi 3 bagian, yaitu kasir, tampilan untuk dapur, dan tampilan untuk pelanggan. Pada komputer kasir, program diawali dengan login. Setelah login, akan ditampilkan mainpage yang menyediakan button untuk melakukan input pesanan pelanggan secara mudah dan menghitung total harga item yang dibeli. Setelah pesanan selesai diinput, pesanan akan ditampilkan pada layar untuk dapur dan layar untuk pelanggan. Koki dapat segera memasakn setiap item pesanan pelanggan tersebut. Sementara di layar untuk pelanggan akan ditampilkan status pesanan tersebut, yaitu sedang diproses. Jika koki di dapur telah selesai memasak pesanan, koki akan menekan button ready sehingga status pesanan pada layar untuk pelanggan akan berubah menjadi sudah siap (ready).
+Proyek ini merupakan implementasi dalam bentuk MPV dari tugas keprofesian SPARTA 2018. Secara umum proyek berbasis web  ini terbagi menjadi 3 bagian, yaitu kasir, tampilan untuk dapur, dan tampilan untuk pelanggan. Pada komputer kasir, program diawali dengan login. Setelah login, akan ditampilkan sebuah mainpage yang menyediakan button untuk melakukan input pesanan pelanggan secara mudah dan menghitung total harga item yang dibeli. Setelah pesanan selesai diinput, pesanan akan ditampilkan pada layar untuk dapur dan layar untuk pelanggan. Koki dapat segera memasakan setiap item pesanan pelanggan tersebut. Sementara di layar untuk pelanggan akan ditampilkan status pesanan tersebut, yaitu sedang diproses. Jika koki di dapur telah selesai memasak pesanan, koki akan menekan button ready sehingga status pesanan pada layar untuk pelanggan akan berubah menjadi sudah siap (ready).
 
 ## Getting Started
 
@@ -63,7 +63,7 @@ Tidak ada lisensi untuk proyek ini.
 
 
 # mlstn2kbbs
- flow dari awal program
+ Flow dari awal program
 
  secara front end
  - login.php
