@@ -9,6 +9,7 @@ CREATE TABLE login(
 );
 
 INSERT INTO login (username, password) VALUES ('username', 'password');
+
 CREATE TABLE menu (
   id int(11) NOT NULL AUTO_INCREMENT,
   nama varchar(255) NOT NULL,
@@ -52,4 +53,8 @@ CREATE TABLE pesanan(
 	FOREIGN KEY(pelangganID) REFERENCES pelanggan(pelangganID),
 	PRIMARY KEY(id)
 );
+INSERT INTO pesanan(pelangganID, menuID) VALUE (1,1);
+INSERT INTO pesanan(pelangganID, menuID) VALUE (1,2);
+INSERT INTO pesanan(pelangganID, menuID) VALUE (2,4);
+INSERT INTO pesanan(pelangganID, menuID) VALUE (3,2);
 
