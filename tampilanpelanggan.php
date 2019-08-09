@@ -1,7 +1,6 @@
 <?php 
   require "functions.php";
-
-  $orders = query("SELECT * FROM orders");
+  $orders = query("SELECT * FROM pesanan");
  ?>
 
 <!DOCTYPE html>
