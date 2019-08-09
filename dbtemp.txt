@@ -49,6 +49,18 @@ CREATE TABLE pelanggan(
 	PRIMARY KEY(id)
 );
 
+CREATE TABLE pesanan(
+	id int(11) NOT NULL AUTO_INCREMENT,
+	NAMApelanggan varchar(255),
+	ADD FOREIGN KEY (IDMenu) REFERENCES menu (id),
+	Jumlah int(11) NOT NULL,
+	Ukuran enum("Small","Big"),
+	Topping enum("garlic","veggies","egg","mushroom","extra meat","bbq sauce","blackpepper sauce","cheese","smoke beef","cheese mayo sauce","grilled onion"), 
+	Kepedasan("not spicy","medium spicy","spicy")
+
+)
+
+
 INSERT INTO pelanggan (nama) VALUES ('Bosque 1');
 INSERT INTO pelanggan (nama) VALUES ('Bosque 2');
 INSERT INTO pelanggan (nama) VALUES ('Bosque 3');

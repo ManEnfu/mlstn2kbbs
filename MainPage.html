@@ -39,24 +39,22 @@
 <div class="container" style="max-width: 100%; margin:0%;">
     <div class="row">
         <div class="col-lg-5" style="background-color: #EDEDED; padding:0%">
+            <!-- $$$ MENU $$$ -->
             <div class="border5">
-                    <!-- $$$ MENU $$$ -->
                 <div class="tab">
-                    <div class="col-lg-12 d-flex justify-content-around">
-                        <button class="btn btn-nav tablinks" onclick="myFunction(event,'ala carte')" id="defaultopen"> ALA CARTE</button>
-                        <button class="btn btn-nav tablinks" onclick="myFunction(event,'snack')"> SNACK</button>
-                        <button class="btn btn-nav tablinks" onclick="myFunction(event,'combo')"> COMBO</button>
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-around" style="padding: 0 7rem; margin: 1rem 0">
-                        <button class="btn btn-nav tablinks" onclick="myFunction(event,'drinks')"> DRINKS</button>
-                        <button class="btn btn-nav tablinks" onclick="myFunction(event,'dessert')"> DESSERT</button>
+                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
+                        <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'ala carte')" id="defaultopen"> ALA CARTE</button>
+                        <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'combo')"> COMBO</button>
+                        <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'snack')"> SNACK</button>
+                        <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'drinks')"> DRINKS</button>
+                        <button type="button" class="btn btn-nav tablinks" onclick="myFunction(event,'dessert')"> DESSERT</button>
                     </div>
                 </div>
                 <hr/>
 
                 <div id="ala carte" class="tabcontent">
-                    <div class="col-lg-12 d-flex justify-content-around">
-                        <div class="card-container">
+                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
+                        <div class="card-container"onclick>
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-alacarte">CLASSIC KEBAB</div>
                         </div>
@@ -72,8 +70,6 @@
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-alacarte">SMOKE BEEF KEBAB</div>
                         </div>
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-alacarte">BARBEQUE KEBAB</div>
@@ -94,7 +90,7 @@
                 </div>
 
                 <div id="combo" class="tabcontent">
-                    <div class="col-lg-12 d-flex justify-content-around">
+                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-combo">COMBO CLASSIC</div>
@@ -111,8 +107,6 @@
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-combo">COMBO SMOKE BEEF</div>
                         </div>
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-combo">COMBO BARBEQUE</div>
@@ -133,7 +127,7 @@
                 </div>
 
                 <div id="snack" class="tabcontent">
-                    <div class="col-lg-12 d-flex justify-content-around">
+                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-snack">CIRENG</div>
@@ -150,15 +144,9 @@
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-snack">INDOMIE</div>
                         </div>
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-snack">GRILLED ONION</div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-snack">NASJEP</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
@@ -172,7 +160,7 @@
                 </div>
 
                 <div id="drinks" class="tabcontent">
-                    <div class="col-lg-12 d-flex justify-content-around">
+                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-drink">ICE TEA</div>
@@ -189,8 +177,6 @@
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-drink">MANGO TEA</div>
                         </div>
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-drink">COCA COLA</div>
@@ -211,7 +197,7 @@
                 </div>
 
                 <div id="dessert" class="tabcontent">   
-                    <div class="col-lg-12 d-flex justify-content-around">
+                    <div class="col-lg-12 d-flex flex-wrap justify-content-around">
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-dessert">ICE CREAM</div>
@@ -226,17 +212,7 @@
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-dessert">COOKIE</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 d-flex justify-content-around">
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
                             <div class="card-dessert">PUDDING</div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
-                            <div class="card-dessert">DOUGHNUT</div>
                         </div>
                         <div class="card-container">
                             <div class="card-image"><img src="Assets/kabobs.png" style="width:100%"></div>
@@ -250,8 +226,8 @@
                 </div>
             </div>
         </div>
-        <!-- $$$ VARIAN, TOPPING, KEPEDASAN $$$ -->
-        <div class="col-lg-2 text-center" style="background-color:#EDEDED; padding:0%">
+        <div class="col-lg-2 d-flex flex-wrap justify-content-center" style="background-color:#EDEDED; padding:0%">
+            <!-- $$$ VARIAN, TOPPING, KEPEDASAN $$$ -->
             <div class="border5">
                 <b>VARIAN</b>
                     <button type="button" class="btn btn-var">BIG</button>
@@ -264,42 +240,43 @@
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">EGG</label>
                             </div> </li>
-                         
+                            <li>
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">VEGGIES</label>
                             </div> </li>
-                        
+                            <li>
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">MUSHROOM</label>
                             </div> </li>
-                           
+                            <li>
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">EXTRA MEAT</label>
                             </div> </li>
-                         
+                            <li>
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">BBQ SCE</label>
                             </div> </li>
-                           
+                            <li>
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">BLKPPR SCE</label>
                             </div> </li>
-                           
+                            <li>
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">CHEESE</label>
                             </div> </li>
-                          
+                            <li>
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">SMK BEEF</label>
                             </div> </li>
-                           
+                            <li>
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">CHEESE MAYO</label>
                             </div> </li>
-                           
+                            <li>
                             <li> <div class="checkbox">
                                     <label><input type="checkbox">GRL ONION</label>
                             </div> </li>
+                            <li>
                         </ul>
                     </button>
                 <hr/>
@@ -310,10 +287,11 @@
             </div>
         </div> 
         <div class="col-lg-5" style="background-color:#EDEDED; padding:0%">
+            <!-- $$$ ORDER $$$ -->
             <div class="border5">
-                <button type="button" class="btn btn-success" style="padding: 0.4rem; margin: 0.8rem 1.2rem 3rem 10px; width: 50px">+</button>
-                <b style="margin-left: 75px; font-size: 18px;">ORDER</b>
-                <button type="button" class="btn btn-danger" style="padding: 0.4rem; margin: 0.8rem 1.2rem 3rem 90px; width: 50px">-</button>
+                <button type="button" class="btn btn-order-plus">+</button>
+                <b style="margin: 0 9rem 0 9rem; font-size: 18px;">ORDER</b>
+                <button type="button" class="btn btn-order-min">-</button>
             </div>
         </div>
     </div>
@@ -328,12 +306,12 @@ function myFunction(evt, namamenu) {
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace("active", "");
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(namamenu).style.display = "block";
-    evt.currentTarget.className += "active";
+    evt.currentTarget.className += " active";
 }
-document.getElementById("defaultopen").click();
+    document.getElementById("defaultopen").click()
 </script>
 
 </body>
