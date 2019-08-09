@@ -25,13 +25,13 @@
 }
 
 .card-container .card-image {
-  width: 100%;
+  width: 95%;
   background-color: coral;
 }
 
 .card-container .card-alacarte {
   min-height: 50px;
-  width: 100%;
+  width: 95%;
   font-size: 14px;
   color: white;
   font-weight: bold;
@@ -42,7 +42,7 @@
 
 .card-container .card-combo {
   min-height: 50px;
-  width: 100%;
+  width: 95%;
   font-size: 14px;
   color: white;
   font-weight: bold;
@@ -53,7 +53,7 @@
 
 .card-container .card-snack {
   min-height: 50px;
-  width: 100%;
+  width: 95%;
   font-size: 14px;
   color: white;
   font-weight: bold;
@@ -64,7 +64,7 @@
 
 .card-container .card-drink {
   min-height: 50px;
-  width: 100%;
+  width: 95%;
   font-size: 14px;
   color: white;
   font-weight: bold;
@@ -75,7 +75,7 @@
 
 .card-container .card-dessert {
   min-height: 50px;
-  width: 100%;
+  width: 95%;
   font-size: 14px;
   color: white;
   font-weight: bold;
@@ -117,6 +117,7 @@
   padding: 0.5em;
   width: 9em;
   font-weight: bold;
+  margin: 0 0.6em 0 0;
   background-color: #98E6FF;
 }
 
