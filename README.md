@@ -1,5 +1,5 @@
 # SOLUSI IT PADA PERMASALAHAN KABOBS PREMIUM KEBAB
-Proyek ini merupakan implementasi dalam bentuk MPV dari tugas keprofesian SPARTA 2018. Secara umum proyek berbasis web  ini terbagi menjadi 3 bagian, yaitu kasir, tampilan untuk dapur, dan tampilan untuk pelanggan. Pada komputer kasir, program diawali dengan login. Setelah login, akan ditampilkan sebuah mainpage yang menyediakan button untuk melakukan input pesanan pelanggan secara mudah dan menghitung total harga item yang dibeli. Setelah pesanan selesai diinput, pesanan akan ditampilkan pada layar untuk dapur dan layar untuk pelanggan. Koki dapat segera memasakan setiap item pesanan pelanggan tersebut. Sementara di layar untuk pelanggan akan ditampilkan status pesanan tersebut, yaitu sedang diproses. Jika koki di dapur telah selesai memasak pesanan, koki akan menekan button ready sehingga status pesanan pada layar untuk pelanggan akan berubah menjadi sudah siap (ready).
+Proyek ini merupakan implementasi dalam bentuk MVP (Minimum Viable Product) dari tugas keprofesian SPARTA 2018. Secara umum proyek ini berbasis web dan terbagi menjadi 3 bagian, yaitu kasir, tampilan untuk dapur, dan tampilan untuk pelanggan. Pada komputer kasir, program diawali dengan login. Setelah login, akan ditampilkan sebuah mainpage yang menyediakan button untuk melakukan input pesanan pelanggan secara mudah dan menghitung total harga item yang dibeli. Setelah pesanan selesai diinput, pesanan akan ditampilkan pada layar untuk dapur dan layar untuk pelanggan. Koki dapat segera memasakan setiap item pesanan pelanggan tersebut. Sementara di layar untuk pelanggan akan ditampilkan status pesanan tersebut, yaitu sedang diproses. Jika koki di dapur telah selesai memasak pesanan, koki tersebut akan menekan button ready sehingga status pesanan pada layar untuk pelanggan akan berubah menjadi sudah siap (Ready).
 
 ## Getting Started
 
@@ -8,11 +8,11 @@ Proyek ini merupakan implementasi dalam bentuk MPV dari tugas keprofesian SPARTA
 
 
 ### Installing
-1. Simpan aplikasi web dibawah direktori www atau htdocs yang ada di program localhost server
-2. Jalankan server
-3. Buka phpmyadmin melalui browser
-4. Login dengan username "root" dan password ""
-5. Setup database menggunakan sql query yang terdapat di db_temp.txt
+1. Simpan aplikasi web dibawah direktori www atau htdocs yang ada di program localhost server.
+2. Jalankan server.
+3. Buka phpmyadmin melalui browser.
+4. Login dengan username "root" dan password "".
+5. Setup database menggunakan sql query yang terdapat di db_temp.txt.
 
 ## Running the tests
 
@@ -65,7 +65,7 @@ Tidak ada lisensi untuk proyek ini.
 # mlstn2kbbs
  Flow dari awal program
 
- secara front end
+ Secara front end
  - login.php
     - sudah bisa validasi pengguna menggunakan username : username, password : password
  - MainPage.html
@@ -74,7 +74,7 @@ Tidak ada lisensi untuk proyek ini.
     - sudah ada tombol varian, topping, dan kepedasan tetapi masih belum berfungsi
     - tab order di sebelah kanan belum berfungsi
 
-secara back end
+Secara back end
 - database mysql
     - sudah ada database kabobs yang memuat
         - login : informasi untuk login
