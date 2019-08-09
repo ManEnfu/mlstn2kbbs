@@ -14,8 +14,8 @@ if (isset($_POST['idkasir']) and isset($_POST['psw'])){
     $count = mysqli_num_rows($result);
 
     if ($count == 1){
-
-        echo "Login Credentials verified";
+        // echo "Login Credentials verified";
+        header("Location: MainPage.html");
     }else{
         echo "Invalid Login Credentials";
     }
