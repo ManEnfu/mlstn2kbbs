@@ -57,6 +57,7 @@ CREATE TABLE pesanan(
 	Ukuran enum("Small","Big"),
 	Topping enum("garlic","veggies","egg","mushroom","extra meat","bbq sauce","blackpepper sauce","cheese","smoke beef","cheese mayo sauce","grilled onion"), 
 	Kepedasan("not spicy","medium spicy","spicy")
+
 )
 
 
