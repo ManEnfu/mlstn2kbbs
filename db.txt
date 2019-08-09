@@ -10,7 +10,6 @@ CREATE TABLE login(
 
 INSERT INTO login (username, password) VALUES ('username', 'password');
 
-
 CREATE TABLE menu (
   id int(11) NOT NULL AUTO_INCREMENT,
   nama varchar(255) NOT NULL,
