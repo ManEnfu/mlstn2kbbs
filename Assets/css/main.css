@@ -29,57 +29,57 @@
 }
 
 .card-container .card-alacarte {
-  min-height: 25px;
+  min-height: 50px;
   width: 100%;
   font-size: 14px;
   color: white;
   font-weight: bold;
   text-align: center;
-  padding: 6%;
+  padding: 4%;
   background-color: firebrick;
 }
 
 .card-container .card-combo {
-  min-height: 25px;
+  min-height: 50px;
   width: 100%;
   font-size: 14px;
   color: white;
   font-weight: bold;
   text-align: center;
-  padding: 6%;
+  padding: 4%;
   background-color: #b26322;
 }
 
 .card-container .card-snack {
-  min-height: 25px;
+  min-height: 50px;
   width: 100%;
   font-size: 14px;
   color: white;
   font-weight: bold;
   text-align: center;
-  padding: 6%;
+  padding: 4%;
   background-color: #44b222;
 }
 
 .card-container .card-drink {
-  min-height: 25px;
+  min-height: 50px;
   width: 100%;
   font-size: 14px;
   color: white;
   font-weight: bold;
   text-align: center;
-  padding: 6%;
+  padding: 4%;
   background-color: #2290b2;
 }
 
 .card-container .card-dessert {
-  min-height: 25px;
+  min-height: 50px;
   width: 100%;
   font-size: 14px;
   color: white;
   font-weight: bold;
   text-align: center;
-  padding: 6%;
+  padding: 4%;
   background-color: #9a22b2;
 }
 
@@ -148,11 +148,11 @@
 
 .checkbox-menu li label {
   display: block;
-  margin: 0.5rem;
-  padding: 0.5rem 0.5rem;
-  font-weight: bold;
+  padding: 3px 10px;
+  clear: both;
+  font-weight: normal;
   line-height: 1.42857143;
-  color: white;
+  color: #333;
   white-space: nowrap;
   margin: 0;
   -webkit-transition: background-color .4s ease;
