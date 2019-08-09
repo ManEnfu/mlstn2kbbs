@@ -4,34 +4,22 @@ Proyek ini merupakan implementasi dalam bentuk MPV dari tugas keprofesian SPARTA
 ## Getting Started
 
 ### Prerequisites
-Dibutuhkan 2 buah laptop atau PC dan 1 buah tablet untuk menjalankan program ini.
+ Localhost server : Support Apache, MySQL, PHP
+
 
 ### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
+1. Simpan aplikasi web dibawah direktori www atau htdocs yang ada di program localhost server
+2. Jalankan server
+3. Buka phpmyadmin melalui browser
+4. Login dengan username "root" dan password ""
+5. Buat sql query menggunakan db_temp.txt
+6. Buka alamat localhost/mlstn2kbbs/login.php
+7. login dengan username "username" dan password "password"
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
 
 ## Deployment
-
 Add additional notes about how to deploy this on a live system
 
 ## Built With
@@ -40,38 +28,39 @@ Add additional notes about how to deploy this on a live system
 * JavaScript
 * PHP
 * MySQL
+* Bootstrap library
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
 
 ## Authors
 Kelompok 12 / Bosque
-Gregorius Jovan Kresnadi / 16518017
-Hollyana Puteri Haryono / 16518101
-Muhammad Daffa Dinaya / 16518113
-Vincentius Ian Widi Nugroho / 16518130
-Brandon Oktavian Pardede / 16518151
-Moh. Mirza Maulana Ikhsan / 16518201
-Muhamad Ihza Faida Akbar / 16518214
-Anna Elvira Hartoyo / 16518223
-Muhammad Naufal Fakhrizal / 16518230
-Hasna Roihan Nafiisah / 16518289
-Ernest Giovanni / 16518297
-Ananda Yulizar Muhammad / 16518346
-Sulis Tiana / 16518348348
-Rizkin Geordany / 16518408
-Muhammad Cisco Zulfikar / 16518409
+* Gregorius Jovan Kresnadi / 16518017
+* Hollyana Puteri Haryono / 16518101
+* Muhammad Daffa Dinaya / 16518113
+* Vincentius Ian Widi Nugroho / 16518130
+* Brandon Oktavian Pardede / 16518151
+* Moh. Mirza Maulana Ikhsan / 16518201
+* Muhamad Ihza Faida Akbar / 16518214
+* Anna Elvira Hartoyo / 16518223
+* Muhammad Naufal Fakhrizal / 16518230
+* Hasna Roihan Nafiisah / 16518289
+* Ernest Giovanni / 16518297
+* Ananda Yulizar Muhammad / 16518346
+* Sulis Tiana / 16518348348
+* Rizkin Geordany / 16518408
+* Muhammad Cisco Zulfikar / 16518409
 
 
 ## License
 Tidak ada lisensi untuk proyek ini.
 
 ## Acknowledgments
-
+* Kami memperbaiki UI/UX dari sistem POS kabobs yang telah ada dan digunakan saat ini di outlets kabobs
+* Sistem layar untuk pelanggan terinspirasi dari sistem serupa yang telah digunakan pada Domino's Pizza
 
 
 # mlstn2kbbs
