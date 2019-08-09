@@ -1,80 +1,43 @@
-<!DOCTYPE html>
-	
+<?php
+	session_start();	
+?>
+
+<!DOCTYPE html >
 <html>
-
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="login/style-login.css">
-
-<style>
-	body {
-		font-family: Arial, Helvetica, sans-serif;
-		background-color: #ffbe54;}
-
-h2 {
-	text-align: center;
-}
-
-	input[type=text], input[type=password] {
-		width: 100%;
-		padding: 12px 20px;
-		margin: 8px 0;
-		display: inline-block;
-		border: 1px solid #ccc;
-		box-sizing: border-box;
-}
-
-button {
-	background-color: #4CAF50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-}
-
-button:hover {
-  opacity: 0.7;
-}
-
-.imgcontainer {
-  text-align: center;
-  margin: 40px 0 0 0;
-  padding : 0;
-}
-
-img.logo {
-  width: 20%;
-}
-
-.container {
-  padding:0 260px 0 260px;
-}
-
-}
-</style>
+<title>KABOBS LOGIN FORM</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../assets/css/login.css">
 </head>
-<body>
-
+<body id="body_bg">
 <div class="imgcontainer">
 	<img src="../Assets/logo.png" class="logo">
 </div>
 
 <div class="container">
 <h2>LAMAN LOGIN KASIR</h2>
-
-	<form action="auth.php" method="post">
-		<label for="idkasir"><b>ID Kasir</b></label>
-		<input type="text" placeholder="Masukkan ID Kasir" name="idkasir" required>
-
-		<label for="psw"><b>Password</b></label>
-		<input type="password" placeholder="Masukkan Password" name="psw" required>
-        
-		<button type="submit">Login</button>
-		
-    </form>
+	<div class="form_input">
+		<form id="login-form" method="post" action="auth.php">
+			<label for="idkasir"><b>ID Kasir</b></label>
+			<input type="text" placeholder="Masukkan ID Kasir" id="idkasir" name="idkasir" required>
+	
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Masukkan Password" id="psw" name="psw" required>
+			
+			<button type="submit">Login</button>
+		</form>
+	</div>
+	<?php
+				if (isset($_SESSION['login_invalid'])) {
+					if ($_SESSION['login_invalid']) {
+						unset($_SESSION['login_invalid']);
+						echo "<p>Invalid login credentials.</p>";
+					}
+				}
+			?>
   </div>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </body>
 </html>
