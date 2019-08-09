@@ -1,7 +1,7 @@
 <?php 
   require "functions.php";
-
-  $orders = query("SELECT * FROM ");
+  require "db_connect.php"
+  $orders = query($connection, "SELECT * FROM pesanan");
  ?>
 
 <!DOCTYPE html>
