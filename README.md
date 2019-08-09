@@ -12,15 +12,14 @@ Proyek ini merupakan implementasi dalam bentuk MPV dari tugas keprofesian SPARTA
 2. Jalankan server
 3. Buka phpmyadmin melalui browser
 4. Login dengan username "root" dan password ""
-5. Buat sql query menggunakan db_temp.txt
-6. Buka alamat localhost/mlstn2kbbs/login.php
-7. login dengan username "username" dan password "password"
+5. Setup database menggunakan sql query yang terdapat di db_temp.txt
 
 ## Running the tests
 
 
 ## Deployment
-Add additional notes about how to deploy this on a live system
+1. Jalankan local server
+2. Buka alamat localhost/mlstn2kbbs
 
 ## Built With
 * HTML
@@ -84,7 +83,6 @@ secara back end
                     kategori (a la carte, drink, combo, dessert), ukuran (small, big)
                     ukuran (small, big)
                     kepedasan (not spicy, medium, spicy)
-                data menu yang masih dibuat : Kebab Daging, Kebab Black Pepper
         - pelanggan : nama (bersifat dummy) ada 4
         - pesanan   : berisi id pelanggan dan id menu yang dipilih.
 - connect mysql : db_connect.php
@@ -97,5 +95,7 @@ secara back end
     - sudah bisa validasi melalui mysql
 
 - MainPage.php
-    - 
+    - Dapat menampilkan menu dari tiap-tiap kategori.
+    - Untuk menambah menu, pilih menu di bagian kiri, kemudian pilih varian, sauce, dan kepedasan, kemudian klik tombol tambah (+). Menu akan muncul di tabel beserta harga per menu dan total harga.
+    - Proses pesanan belum diimplementasi.
     
