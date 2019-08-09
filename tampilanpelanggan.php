@@ -36,7 +36,7 @@
           echo "#ffa552";
       } ?>" onclick="ActiveXObject">
         <td class="text-center"><?=$order["id"] ?></td>
-        <td class="text-center"><?=$order["nama_pemesan"] ?></td>
+        <td class="text-center"><?=$order["NAMApelanggan"] ?></td>
         <td class="text-left"><?=$order["status"] ?></td>
       </tr>
 
