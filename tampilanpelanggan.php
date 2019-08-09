@@ -1,7 +1,6 @@
 <?php 
   require "functions.php";
-
-  $orders = query("SELECT * FROM orders");
+  $orders = query("SELECT * FROM pesanan");
  ?>
 
 <!DOCTYPE html>
@@ -30,7 +29,7 @@
     <tbody class="text-center" bgcolor="white">
 
 <?php $i = 1;
-      foreach($orders as $order) : ?>
+      foreach($orders as $order) :  ?>
       <tr class="clickable-row" style="height: 50px; " bgcolor="<?php if ($order["status"] == "Siap") {
         echo "#ffefb3";
         } else {
