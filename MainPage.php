@@ -30,12 +30,22 @@
     <div class="btn-group">
         <button type="button" class="btn btn-secondary dropdown-toggle font-weight-bold dropdown-account" style="background-color:rgb(252, 143, 18)" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
-        Akun kasir
+        <?php
+            session_start();
+            if (isset($_SESSION["loggedid"])) {
+                $s_user = $_SESSION["loggedid"];
+                $s_self = $_SERVER["PHP_SELF"];
+                echo $s_user;
+            } else {
+                echo "placeholder";
+                header('Location: index.php');
+            }
+        ?>
         </button>
         <div class="dropdown-menu dropdown-menu-right">
             <button class="dropdown-item" type="button" href="#">Profile</button>
             <div class="dropdown-divider"></div>
-            <button class="dropdown-item" type="button" href="#">Sign Out</button>
+            <button class="dropdown-item" type="button" onclick="location.href='logout.php'">Sign Out</button>
         </div>
     </div>
 </nav>
