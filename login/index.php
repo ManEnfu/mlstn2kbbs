@@ -6,14 +6,10 @@
 <html>
 	<head>
 		<title>KABOBS LOGIN FORM</title>
-		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
     	<!-- Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="../assets/css/login.css">
     	<!-- jQuery library -->
-    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</head>
 
@@ -23,7 +19,7 @@
 	</div>
 
 	<div class="container">
-		<h2>LAMAN LOGIN KASIR</h2>
+		<h2>LOGIN KASIR</h2>
 			<div class="form_input">
 				<form id="login-form" method="post" action="auth.php">
 					<label for="idkasir"><b>ID Kasir</b></label>
