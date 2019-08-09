@@ -7,10 +7,10 @@ function addItem(name, price)
 }
 
 var id=1;
-
+var total = 0;
 function createMenuItem()
 {
-    if(name!='-1')
+    if(name!='')
     {
         var table = document.getElementById("menu-list");
         var tr = document.createElement("tr");
@@ -20,7 +20,7 @@ function createMenuItem()
         var td4 = document.createElement("td");
         var td5 = document.createElement("td");
 
-        td1.innerHTML = id++;
+        td1.innerHTML = id;
         tr.appendChild(td1);
         td2.innerHTML = name + ' ' + topping;
         tr.appendChild(td2);
@@ -28,11 +28,14 @@ function createMenuItem()
         tr.appendChild(td3);
         td4.innerHTML = level;
         tr.appendChild(td4);
-        td5.innerHTML = 25000;
+        if (variant == "BIG") stotal += 4000;
+        td5.innerHTML = stotal;
         tr.appendChild(td5);
 
+        table.appendChild(tr);
 
-        table.append(tr);
+        total += stotal;
+        document.getElementById("numtotal").innerHTML = "IDR " + total;
 
     }
 }
@@ -46,16 +49,19 @@ function updatePrice()
     price.innerHTML = currentPrice;
 }
 
-var name = '-1';
-var variant = '-1';
-var topping = '-1';
+var name = '';
+var variant = '';
+var topping = '';
+var stotal = 0;
 var level = 0;
 
-function setMenu(itemName)
+function setMenu(id, itemName, price)
 {
+    id = id;
     name = itemName;
-    variant='-1';
-    topping='-1';
+    stotal = price;
+    variant='';
+    topping='';
     level=0;
 }
 
