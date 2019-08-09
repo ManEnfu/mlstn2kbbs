@@ -10,29 +10,38 @@ CREATE TABLE login(
 
 INSERT INTO login (username, password) VALUES ('username', 'password');
 
+CREATE DATABASE kabobs;
+USE kabobs;
 CREATE TABLE menu (
-  id int(11) NOT NULL AUTO_INCREMENT,
-  nama varchar(255) NOT NULL,
-  harga int(11) NOT NULL,
-  kategori enum("a la carte","drink","combo","dessert","snack"),
-  ukuran enum("small","big"),
-	kepedasan enum('not spicy','medium','spicy'),
-  PRIMARY KEY (id)
+	id int(11) NOT NULL AUTO_INCREMENT,
+	nama varchar(255) NOT NULL,
+	harga int(11) NOT NULL,
+	kategori enum('a la carte','combo','drink','dessert','snack'),
 );
 
-INSERT INTO menu (nama, harga, kategori, ukuran, kepedasan) VALUES ('Kebab Daging',10000,'a la carte','small','not spicy');
-INSERT INTO menu (nama, harga, kategori, ukuran, kepedasan) VALUES ('Kebab Daging',10000,'a la carte','small','medium');
-INSERT INTO menu (nama, harga, kategori, ukuran, kepedasan) VALUES ('Kebab Daging',10000,'a la carte','small','spicy');
-INSERT INTO menu (nama, harga, kategori, ukuran, kepedasan) VALUES ('Kebab Daging',13000,'a la carte','big','not spicy');
-INSERT INTO menu (nama, harga, kategori, ukuran, kepedasan) VALUES ('Kebab Daging',13000,'a la carte','big','medium');
-INSERT INTO menu (nama, harga, kategori, ukuran, kepedasan) VALUES ('Kebab Daging',13000,'a la carte','big','spicy');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('CLASSIC KEBAB', 18000, 'a la carte');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('FULLBEEF KEBAB', 20000, 'a la carte');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('VEGETABLE KEBAB', 16000, 'a la carte');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('ICE TEA', 7000, 'drink');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('LEMON TEA', 10000, 'drink');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('COMBOBS2', 69000, 'combo');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('COMBOBS FAMILY', 129000, 'combo');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('ICE CREAM', 12000, 'dessert');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('BANANA SPLIT', 13000, 'dessert');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('CIRENG', 7000, 'snack');
+INSERT INTO menu (nama, harga, kategori) VALUES 
+	('TELOR GULUNG', 12000, 'snack');
 
-INSERT INTO menu (nama, harga, kategori, ukuran) VALUES ('Kebab Black Pepper',12000,'a la carte','small','not spicy');
-INSERT INTO menu (nama, harga, kategori, ukuran) VALUES ('Kebab Black Pepper',12000,'a la carte','small','medium');
-INSERT INTO menu (nama, harga, kategori, ukuran) VALUES ('Kebab Black Pepper',12000,'a la carte','small','spicy');
-INSERT INTO menu (nama, harga, kategori, ukuran) VALUES ('Kebab Black Pepper',15000,'a la carte','big','not spicy');
-INSERT INTO menu (nama, harga, kategori, ukuran) VALUES ('Kebab Black Pepper',15000,'a la carte','big','medium');
-INSERT INTO menu (nama, harga, kategori, ukuran) VALUES ('Kebab Black Pepper',15000,'a la carte','big','spicy');
 
 CREATE TABLE pelanggan(
 	id int(11) NOT NULL AUTO_INCREMENT,
@@ -45,16 +54,4 @@ INSERT INTO pelanggan (nama) VALUES ('Bosque 2');
 INSERT INTO pelanggan (nama) VALUES ('Bosque 3');
 INSERT INTO pelanggan (nama) VALUES ('Bosque 4');
 
-CREATE TABLE pesanan(
-	id int(11) NOT NULL AUTO_INCREMENT,
-	pelangganID int,
-	menuID int,
-	FOREIGN KEY(menuID) REFERENCES menu(menuID),
-	FOREIGN KEY(pelangganID) REFERENCES pelanggan(pelangganID),
-	PRIMARY KEY(id)
-);
-INSERT INTO pesanan(pelangganID, menuID) VALUE (1,1);
-INSERT INTO pesanan(pelangganID, menuID) VALUE (1,2);
-INSERT INTO pesanan(pelangganID, menuID) VALUE (2,4);
-INSERT INTO pesanan(pelangganID, menuID) VALUE (3,2);
 
